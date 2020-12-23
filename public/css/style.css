@@ -6,25 +6,37 @@
     box-sizing: border-box;
 }
 :root {
-    --text: #57606fde;
+    /* hsl(231, 69%, 60%) */
+    /* --text: #57606fde; */
+    --text: hsla(229, 31%, 21%, 0.753);
     --paragraph: #718093de;
     --white-txt: rgb(255, 255, 255);
     --green: #079992;
-    --blue-bg: #1e3799;
-    --blue-overlay: #1e379983;
+    /* --blue-bg: #1e3799; */
+    --blue-bg: hsl(231, 69%, 60%);
+    --dark-blue-bg: hsl(231, 69%, 60%);
+    /* --blue-overlay: #1e379983; */
+    --blue-overlay: hsla(231, 69%, 60%, 0.562);
     --blue: #3498db;
     --btn-green: #26de81;
-    --btn-green-hover: #13b464;
+    --btn-green-hover: #1bb166;
     --easy: #007bff;
     --intermedite: #ffc107;
+    --intermedite-hover: #dda80a;
     --difficult: #dc3545;
-    --very-light-grey: rgba(238, 238, 238, 0.603);
+    /* --very-light-grey: rgba(238, 238, 238, 0.603); */
+    --very-light-grey: hsla(231, 73%, 72%, 0.116);
     --secondary-overlay: #b4c9e42d;
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
 }
 body {
     width: 100vw;
     overflow-x: hidden;
-    background-color: #f5ffff48;
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 400;
 }
 .content {
     margin-top: 4rem;
@@ -32,19 +44,24 @@ body {
 button {
     border: none;
     outline: none !important;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 8px 6px -6px hsla(231, 69%, 60%, 0.459);
 }
 button a {
     width: 100% !important;
     height: 100%;
     /* background-color: #555; */
 }
+button,
+a {
+    outline-color: var(--difficult);
+}
 
-/* ************* Begining of header styling ********************* */
+/* ************* Beginning of header styling ********************* */
 header {
     width: 100vw;
 }
@@ -57,19 +74,21 @@ header nav {
 .navbar-nav {
     margin-left: 4rem;
 }
-.nav-link {
+header .nav-link {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
     color: var(--text);
     margin: 0 10px !important;
     font-weight: 400;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
-.nav-link:hover {
+header .nav-link:hover {
     color: var(--blue-bg);
-    background: #eee;
+    background: var(--very-light-grey);
 }
 .dropdown img {
     width: 2rem;
@@ -77,13 +96,14 @@ header nav {
 .dropdown .nav-link {
     border-bottom: none;
 }
-.active-linkFcontainer {
-    background: #eee;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+header .active-link {
+    background: var(--very-light-grey);
+    color: var(--blue-bg) !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .dropdown .nav-link:hover {
     border-bottom: none;
@@ -131,6 +151,15 @@ header nav {
     0 100px 80px rgba(0, 0, 0, 0.12);
     transition-duration: .2s !important;
     padding: 40px 0
+}
+.active-sidenav-link {
+    background-color: var(--very-light-grey);
+    color: var(--blue-bg) !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 /* ************* end of header styling ********************* */
 /* ************* start of challenge-title styling ********************* */
@@ -186,22 +215,37 @@ header nav {
     margin-top: 10px;
     top: 5rem;
 }
-.defualt-side-nav {
-    background-color: #fff !important;
-    background: #fff !important;
+.default-side-nav {
+    background-color: #fff;
+    background: #fff;
+}
+.default-side-nav .nav-item {
+    margin-left: 1rem;
+}
+.default-side-nav .nav-link {
+    color: var(--text);
+}
+.default-side-nav .nav-link:hover {
+    background-color: var(--very-light-grey);
+    color: var(--blue-bg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .nav.flex-column h6 {
     background-color: var(--blue-bg);
     padding: 10px 25px;
     color: var(--white-txt);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .nav.flex-column .nav-link {
-    font-weight: 300;
+    font-weight: 400;
 }
 .nav-link i {
     width: 2rem;
@@ -217,7 +261,7 @@ header nav {
 } 
 .challenge-card {
     width: 21rem;
-    height: 30.5rem;
+    height: 32rem;
     border-radius: 8px;
     margin: 0 auto;
     margin-bottom: 3rem;
@@ -225,7 +269,8 @@ header nav {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.089), 0 1px 2px rgba(0, 0, 0, 0.11);
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.089), 0 1px 2px rgba(0, 0, 0, 0.11); */
+    box-shadow: 0px 3px 10px 1px hsla(234, 41%, 71%, 0.294);
     transition: all 0.5s cubic-bezier(.25,.8,.25,1);
     -webkit-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
     -moz-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
@@ -233,13 +278,11 @@ header nav {
     -o-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
 .challenge-card:hover {
-    width: 22rem;
-    /* height: 30rem; */
-    /* margin-left: 0.1rem;
-    margin-right: 0.1rem; */
-    margin-top: -1rem;
-    margin-bottom: 4rem;
-    box-shadow:    0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 -6.7px 5.3px rgba(0, 0, 0, 0.048),    0 -12.5px 10px rgba(0, 0, 0, 0.06),    0 22.3px 17.9px rgba(0, 0, 0, 0.072),    0 41.8px 33.4px rgba(0, 0, 0, 0.086),    0 100px 80px rgba(0, 0, 0, 0.12);
+    transform: scale(1.06);
+    margin-top: -.2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 10px 15px 4px hsla(234, 41%, 71%, 0.294);
+    /* box-shadow:    0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 -6.7px 5.3px rgba(0, 0, 0, 0.048),    0 -12.5px 10px rgba(0, 0, 0, 0.06),    0 22.3px 17.9px rgba(0, 0, 0, 0.072),    0 41.8px 33.4px rgba(0, 0, 0, 0.086),    0 100px 80px rgba(0, 0, 0, 0.12); */
     transition: all 0.5s cubic-bezier(.25,.8,.25,1);
     -webkit-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
     -moz-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
@@ -350,7 +393,7 @@ header nav {
     width: 100%;
     height: auto;
 }
-.tab-content {
+.challenge-card .tab-content {
     height: 12rem;
     padding: 10px 20px;
 }
@@ -386,23 +429,32 @@ header nav {
     width: 100%;
     text-align: center;
 }
-.tab-details .tab-details-sub4 button {
-    width: 100%;
+.challenge-card .tab-details-sub4 button {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.3rem;
     height: 3rem;
     background-color: var(--btn-green);
+    position: relative;
     border: none;
     outline: none !important;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     transition-duration: .3s;
 }
-.tab-details .tab-details-sub4 button:hover {
+.challenge-card .tab-details-sub4 button:hover {
+    background-color: #fff;
     background-color: var(--btn-green-hover);
+    /* border: 2px solid var(--btn-green); */
     transition-duration: .3s;
 }
+/* .challenge-card .tab-details-sub4 button:hover a {
+    color: var(--btn-green);
+    transition-duration: .3s;
+} */
 .tab-details .tab-details-sub4 button a {
     color: var(--white-txt);
 }
@@ -413,11 +465,11 @@ header nav {
     font-size: 13px;
     margin-top: 5px;
     margin-right: 5px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .skill {
     background-color: antiquewhite;
@@ -516,7 +568,8 @@ header nav {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.089), 0 1px 2px rgba(0, 0, 0, 0.11);
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.089), 0 1px 2px rgba(0, 0, 0, 0.11); */
+    box-shadow: 0px 3px 10px 1px hsla(234, 41%, 71%, 0.294);
     transition: all 0.5s cubic-bezier(.25,.8,.25,1);
     -webkit-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
     -moz-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
@@ -524,13 +577,11 @@ header nav {
     -o-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
 .solution-card:hover {
-    width: 22rem;
-    /* height: 30rem; */
-    /* margin-left: 0.1rem;
-    margin-right: 0.1rem; */
-    margin-top: -1rem;
-    margin-bottom: 4rem;
-    box-shadow:    0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 -6.7px 5.3px rgba(0, 0, 0, 0.048),    0 -12.5px 10px rgba(0, 0, 0, 0.06),    0 22.3px 17.9px rgba(0, 0, 0, 0.072),    0 41.8px 33.4px rgba(0, 0, 0, 0.086),    0 100px 80px rgba(0, 0, 0, 0.12);
+    transform: scale(1.06);
+    margin-top: -.2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 10px 15px 4px hsla(234, 41%, 71%, 0.294);
+    /* box-shadow:    0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 -6.7px 5.3px rgba(0, 0, 0, 0.048),    0 -12.5px 10px rgba(0, 0, 0, 0.06),    0 22.3px 17.9px rgba(0, 0, 0, 0.072),    0 41.8px 33.4px rgba(0, 0, 0, 0.086),    0 100px 80px rgba(0, 0, 0, 0.12); */
     transition: all 0.5s cubic-bezier(.25,.8,.25,1);
     -webkit-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
     -moz-transition: all 0.5s cubic-bezier(.25,.8,.25,1);
@@ -648,8 +699,12 @@ header nav {
     display: flex;
     justify-content: space-between;
 } 
-.tab-details .tab-details-sub1 .author {
+.tab-details .tab-details-sub1 .author a {
     color: var(--paragraph);
+    font-weight: 500;
+}
+.tab-details .tab-details-sub1 .author a:hover {
+    color: var(--blue);
     font-weight: 500;
 }
 .tab-details .tab-details-sub1 .date {
@@ -667,33 +722,33 @@ header nav {
     color: var(--paragraph);
     font-size: 16px !important;
 }
+.solution-sub-2 button {
+    box-shadow: none;
+}
 .tab-details-sub4 {
     width: 100%;
     height: auto;
     padding: .5rem 0;
     text-align: center;
     background-color: transparent;
-}
-.challenge-card .tab-details-sub4 {
-    margin-top: -.8rem;
-}
-.tab-details-sub4 button {
+}   
+.solution-card .tab-details-sub4 button {
     width: 90%;
     height: 3rem;
-    background-color: #26de81;
+    background-color: var(--btn-green);
     border: none;
     padding: 0 !important;
     margin-top: .6rem;
     outline: none !important;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     transition-duration: .3s;
 }
-tab-details-sub4 button:hover {
-    background-color: #13b464;
+.tab-details-sub4 button:hover {
+    background-color: var(--btn-green-hover);
     transition-duration: .3s;
     position: relative;
     bottom: 0;
@@ -709,11 +764,11 @@ tab-details-sub4 button:hover {
     font-size: 13px;
     margin-top: 5px;
     margin-right: 5px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .skill-row {
     height: 9rem;
@@ -772,22 +827,31 @@ tab-details-sub4 button:hover {
     height: 100%;
 }
 .solution-profile-img {
-    width: 30%;
-    height: 100%;
+    width: 3rem;
+    height: 3rem;
+    margin-right: .3rem;
     display: grid;
     align-content: center;
 }
 .solution-profile-img img {
-    width: 70%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
 }
 .solution-profile-con {
     width: 70%;
     height: 100%;
     text-align: left;
 }
-.solution-username {
-    color: var(--paragraph);
+.solution-username a {
+    color: var(--paragraph) !important;
     font-weight: 500;
+}
+.username a {
+    color: var(--text);
+}
+.username a:hover {
+    color: var(--blue);
 }
 .solution-submit-date {
     color: #3498db;
@@ -854,7 +918,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
-    background-color: #2C3A47;
+    background-color: hsl(229, 31%, 21%);
     /* background-color:  hsl(233, 12%, 13%); */
     color: var(--paragraph);
     padding: 40px 0;
@@ -1001,11 +1065,11 @@ footer svg:hover path {
     border: none;
     height: 3rem;
     transition-duration: .3s;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .login-register-btn:hover {
     background-color: var(--blue);
@@ -1017,11 +1081,11 @@ footer svg:hover path {
     color: var(--white-txt);
     line-height: 1.4rem;
     display: block !important;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 /* ************* end of login register button styling ********************* */
 
@@ -1126,11 +1190,11 @@ footer svg:hover path {
 #email-register a {
     color: #fff !important;
     padding: 10px 160px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 #email-register:hover {
     background-color: var(--blue-overlay) !important;
@@ -1250,11 +1314,11 @@ h4 {
     width: 8rem;
     height: 2.6rem;
     border: none;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     margin-left: 1rem;
     background: #1e3799;
     color: var(--white-txt);
@@ -1270,11 +1334,11 @@ h4 {
     width: 19rem;
     height: 2.6rem;
     border: none;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 /* scrollbar ******************************* */
 body::-webkit-scrollbar {
@@ -1441,11 +1505,11 @@ h1 i em a {
 button {
     border: none;
     outline: none;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 /* end challenge info ******************************* */
 /* start solution info ******************************* */
@@ -1459,8 +1523,14 @@ button {
     /* margin-bottom: 1.4rem; */
 }
 .user-img-con {
-    width: 25%;
+    width: 3rem;
     height: 100%;
+    margin-right: .5rem;
+}
+.user-img-con img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
 }
 .user-detail-con {
     width: 50%;
@@ -1490,9 +1560,9 @@ button {
 
 
 /* start of leaderboard page ******************************* */
-.content-row.leaderboard {
+/* .content-row.leaderboard {
     background-color: var(--very-light-grey); 
-}
+} */
 .leaderboard-user {
     width: 100%;
     height: auto;
@@ -1500,7 +1570,7 @@ button {
     align-content: center;
     margin-bottom: .7rem;
     background-color: #fff;
-    box-shadow: 1px 1px 2px 2px #eee;
+    box-shadow: 1px 1px 2px 2px var(--very-light-grey);
     padding: 1rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -1509,12 +1579,15 @@ button {
     -o-border-radius: 10px;
 }
 .leaderboard-user:hover {
-    background-color: rgba(255, 255, 255, 0.281);
-    box-shadow: 3px 3px 5px 5px #eee;
+    background-color: var(--very-light-grey);
+    /* box-shadow: 3px 3px 5px 5px #eee; */
     /* width: 101%; */
 }
 .leaderboard-user-sub-1 {
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .leaderboard-user-sub-2 {
     height: 100%;
@@ -1576,16 +1649,17 @@ button {
     display: flex;
 }
 .promotion-inline .person .img {
-    width: 20%;
-    height: 100%;
+    width: 2.4rem;
+    height: 2.4rem;
 }
 .promotion-inline .person .img img {
-    height: 100%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     transform: scale(0.9);
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
@@ -1596,11 +1670,16 @@ button {
     width: 50%;
     height: 100%;
     display: grid;
+    /* justify-content: flex-start; */
     align-content: center;
 }
 .promotion-inline .person .name a {
     /* padding-top: 1rem; */
+    margin-right: 3rem;
     color: var(--paragraph);
+}
+.promotion-inline .person .name a:hover {
+    color: var(--blue-bg);
 }
 .promotion-inline .person .pts {
     width: 30%;
@@ -1664,25 +1743,24 @@ button {
 /* Start of Community page ******************************* */
 .user-post {
     height: 50px;
-    background-color: var(--secondary-overlay);
     padding: 0;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    justify-content: center !important;
 }
-.user-p-img {
-    width: 20%;
+.user-post img {
     height: 50px;
-}
-.user-post .col-md-2 img {
-    height: 100%;
-    transform: scale(.8);
+    width: 50px;
+    border-radius: 50%;
+    /* transform: scale(.8);
     -webkit-transform: scale(.8);
     -moz-transform: scale(.8);
     -ms-transform: scale(.8);
-    -o-transform: scale(.8);
+    -o-transform: scale(.8); */
 }
 .user-p-post {
     width: 80%;
@@ -1696,16 +1774,22 @@ button {
     padding: 0 1rem;
     outline: none;
     border: none;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    transform: scaleY(.8);
-    -webkit-transform: scaleY(.8);
-    -moz-transform: scaleY(.8);
-    -ms-transform: scaleY(.8);
-    -o-transform: scaleY(.8);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--very-light-grey);
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transition-duration: .3s;
+}
+.user-post input:focus {
+    background-color: #fff;
+    transition-duration: .3s;
 }
 .user-post button {
     width: 17%;
@@ -1713,29 +1797,31 @@ button {
     height: 50px;
     background-color: var(--blue-bg);
     color: var(--white-txt);
-    transform: scaleY(.8);
-    -webkit-transform: scaleY(.8);
-    -moz-transform: scaleY(.8);
-    -ms-transform: scaleY(.8);
-    -o-transform: scaleY(.8);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .posts {
     width: 100%;
     height: auto;
     padding: 2rem 1rem;
+    background-color: var(--secondary-overlay);
 }
 .post {
-    width: 100%;
+    width: 65%;
     height: auto;
     background-color: #fff;
+    margin: 0 auto;
     margin-bottom: 1.3rem;
-    /*border: 1px solid #ddd;
-    */padding: 1.2rem .8rem;
+    border: 2px solid var(--very-light-grey);
+    padding: 1.2rem .8rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1751,7 +1837,8 @@ button {
     border-bottom: 1px solid #eee;
 }
 .post-sub-2 p {
-    color: var(--text);
+    padding: .6rem 0;
+    color: var(--Very-Dark-Blue);
 }
 .post-sub-3 {
     width: 100%;
@@ -1759,7 +1846,8 @@ button {
     /* padding: 0 3rem; */
 }
 .post-sub-3 h6 {
-    color: var(--blue);
+    color: var(--paragraph) !important;
+    margin-top: .5rem;
 }
 .post-sub-3 input[type="text"] {
     width: 83%;
@@ -1893,9 +1981,324 @@ button {
   -o-border-radius: 50px;
 }
 /* end of Community page ******************************* */
+/* Start of Mentor profile page ******************************* */
+.mentor-sub-1 {
+    height: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.mentor-sub-1 .mentor-pic {
+    height: 300.5px;
+    margin-bottom: 1rem;
+}
+.mentor-sub-1 .mentor-pic img {
+    height: 100%;
+}
+.property-con {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    background-color: var(--secondary-overlay);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.property-simple {
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.property-simple .prop {
+    margin-right: .5rem;
+    font-weight: 600;
+}
+.property-simple .prop-value {
+    font-weight: 300;
+}
+.property-com {
+    text-align: center;
+}
+.property-com .prop {
+    margin-right: .5rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+.property-com .prop-value {
+    font-weight: 300;
+    font-size: 18px;
+}
+.mentor-sub-2 .nav-link {
+    color: var(--blue-bg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition-duration: .3s;
+}
+.mentor-sub-2 .nav-link:hover {
+    background-color: var(--very-light-grey);
+    transition-duration: .3s;
+}
+.mentor-sub-2 .nav-link.active {
+    color: var(--white-txt);
+    background-color: var(--blue-bg) !important;
+}
+.mentor-sub-2 .nav-tab {
+    border-bottom: 2px solid var(--blue-bg);
+    padding-bottom: .3rem;
+    margin-bottom: 2rem;
+}
+.mentor-sub-2 .nav-item {
+    width: 50%;
+}
+.mentor-sub-2 .challenge-card {
+    height: 31.5rem;
+}
+.mentor-sub-2 .challenge-card .tab-details-sub4 {
+    margin-top: .4rem;
+}
+.mentor-sub-2 .challenge-card .tab-details-sub4 button {
+    width: 90%;
+}
+.mentor-sub-2 .nav-link {
+    text-align: center;
+}
+/* end of Mentor profile page ******************************* */
+/* Start of Secondary user profile page ******************************* */
+#sec-user-activity {
+    background-color: var(--very-light-grey);
+}
+.sec-user .tab-details-sub4 button {
+    width: 90%;
+}
+.user-lvl-stats .prop {
+    font-size: 16px;
+}
+.user-lvl-stats img {
+    width: 25%;
+}
+/* end of Secondary user profile page ******************************* */
+/* Start of Mentor page profile page ******************************* */
+.mentor-card-con {
+    height: auto;
+    /* background-color: red; */
+    margin-bottom: 5.5rem;
+}
+.mentor-card {
+    width: 100%;
+    height: 18rem;
+    margin-bottom: 0rem;
+}
+.mentor-card-sub {
+    position: relative;
+    padding: 1rem;
+    top: 4.5rem;
+    width: 100%;
+    height: 14.5rem;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0px 3px 10px 1px hsla(234, 41%, 71%, 0.294);
+    /* background-color: var(--blue-bg); */
+    /* background-color: var(--secondary-overlay); */
+    transition-duration: .3s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.mentor-card-sub:hover {
+    transition-duration: .3s;
+    transform: scale(1.03);
+    background-color: hsla(234, 41%, 71%, 0.068);
+    box-shadow: 0px 10px 15px 4px hsla(234, 41%, 71%, 0.294);
+    /* box-shadow:    0 2.8px 2.2px rgba(36, 35, 35, 0.034), 0 -6.7px 5.3px rgba(41, 41, 41, 0.048),    0 -5.5px 10px rgba(46, 46, 46, 0.06),    0 8.3px 17.9px rgba(34, 34, 34, 0.055),    0 10.8px 33.4px rgba(37, 37, 37, 0.055),    0 20px 80px rgba(39, 39, 39, 0.12); */
+}
+.mentor-card-sub .mentor-img {
+    width: 100%;
+    height: 4.5em;
+    text-align: center;
+}
+.mentor-card-sub .mentor-img img {
+    width: 9rem;
+    height: 9rem;
+    transition-duration: .3s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateY(-5.5rem);
+    -webkit-transform: translateY(-5.5rem);
+    -moz-transform: translateY(-5.5rem);
+    -ms-transform: translateY(-5.5rem);
+    -o-transform: translateY(-5.5rem);
+}
+.mentor-card-sub:hover .mentor-img img {
+    /* box-shadow: 0 -7px 20px 10px rgba(0, 0, 0, 0.16); */
+    box-shadow: 0px 3px 10px 1px hsla(234, 41%, 71%, 0.294);
+    transition-duration: .3s;
+}
+.mentor-card-name {
+    text-align: center;
+    color: var(--text);
+    font-size: 25px;
+}
+.mentor-card-sub-1 .row {
+    justify-content: space-between;
+}
+.mentor-card-details {
+    width: 32%;
+}
+.mentor-card .property-con {
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
+}
+.mentor-card-sub-1 .prop {
+    font-weight: 600;
+    color: var(--text);
+}
+.mentor-card-sub-1 .prop-value {
+    color: var(--text);
+}
+/* end of Mentor page profile page ******************************* */
+/* Start of primary user profile page ******************************* */
+.mentor-pic button {
+    position: relative;
+    bottom: 100%;
+    left: 100%;
+    background-color: var(--blue);
+    color: var(--white-txt);
+    padding: .5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: translate(-100%, 100%);
+    -webkit-transform: translate(-100%, 100%);
+    -moz-transform: translate(-100%, 100%);
+    -ms-transform: translate(-100%, 100%);
+    -o-transform: translate(-100%, 100%);
+}
+.mentor-pic button:hover {
+    background-color: var(--blue-bg);
+}
+.primary-user-edit-details {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.primary-user-edit-details .property-simple {
+    margin: .3rem 0;
+}
+.primary-user-edit-details button {
+    height: 20px;
+    font-size: 14px;
+    padding: 0 2rem;
+    background-color: var(--blue);
+    color: var(--white-txt);
+}
+.primary-user-edit-details button:hover {
+    background-color: var(--blue-bg);
+}
+.user-change-data {
+    width: 80%;
+    height: 50px;
+    border: 3px solid var(--blue-bg);
+    padding: 0 10px;
+    color: var(--text);
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.modal-dialog {
+    width: 90vw !important;
+}
+.primary-user-modal .modal-footer button {
+    background-color: var(--blue-bg);
+    color: var(--white-txt);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.user-level-stats-1 {
+    width: 25%;
+}
+.user-level-stats-2 {
+    width: 50%;
+}
+.progress-bar-lvl {
+    background-color: var(--easy);
+}
+.progress-bar-lvl::after {
+    content: "600/2500";
+    margin-top: 2rem;
+    position: absolute;
+    color: var(--text);
+    font-size: .9rem;
+}
+.sub-nav-tabs .nav-link.active {
+    background-color: var(--blue-overlay) !important;
+}
+#primary-user-social .nav-item {
+    width: 33.33%;
+}
+#primary-user-following button {
+    height: 35px;
+    padding: 0 1rem;
+    background-color: var(--difficult) !important;
+    color: var(--white-txt);
+    margin-top: 1.5rem;
+}
+#primary-user-following button:hover {
+    background-color: #b92735 !important;
+}
+.follower {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.follower a {
+    margin-top: .5rem;
+    width: 70%;
+}
+.primary-user-pill {
+    font-size: 12px;
+    padding: .2rem .5rem;
+    color: var(--white-txt);
+    background-color: var(--intermedite);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* end of primary user profile page ******************************* */
+/* Start of mentor dahshboard page ******************************* */
+.mentor-dashboard-tabs .nav-item {
+    width: 33.33%;
+}
+.create-new-challenge {
+    background-color: var(--btn-green);
+    color: var(--white-txt) !important;
+}
+.create-new-challenge:hover {
+    background-color: var(--btn-green-hover) !important;
+    color: var(--white-txt) !important;
+}
+/* end of mentor dahshboard page ******************************* */
 
 /* Portrait and Landscape */
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 767px)  {
     .challenge-card {
         width: 22rem;
         /* height: 29rem; */
@@ -1929,7 +2332,7 @@ button {
         -ms-transform: translateX(30%);
         -o-transform: translateX(30%);
     }
-    #footer-last-lnks li{
+    #footer-last-links li{
         display: flex;
         justify-content: space-between;
     }
@@ -2014,5 +2417,15 @@ button {
     h1 i {
         font-size: 13px;
         margin-left: -10px;
+    }
+    #email-register a {
+        padding: 10px 72px;
+    }
+    .leaderboard-user-sub-1 {
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+    .post {
+        width: 85%;
     }
 }

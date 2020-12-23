@@ -9,7 +9,8 @@
     --very-light-grey: rgba(238, 238, 238, 0.445);
 }
 body {
-    background: url(../assets/images/random-pattern.png);
+    background-color: #fff;
+    background: url(../assets/images/trophy-gold.svg);
 }
 .sign-in-con {
     background-color: var(--deepblue);
@@ -60,6 +61,15 @@ body {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+.input-error {
+  border-color: #d9534f;
+}
+
+.text-small {
+    font-size: 11px;
+}
+
 .input-con:hover {
     border-color: var(--blue);
 }
