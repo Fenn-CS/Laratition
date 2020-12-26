@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth\Events\Registered;
 
 class RegisterController extends Controller
 {
@@ -24,7 +25,7 @@ class RegisterController extends Controller
             'password' => 'required|confirmed',
         ]);
 
-        User::create([
+        $user = User::create([
             'username' => $request->username,
             'name' => $request->name,
             'email' => $request->email,
@@ -35,5 +36,13 @@ class RegisterController extends Controller
             'email' => $request->email,
             'password' => $request->password
         ]);
+
+        event(new Registered($user));
+        return redirect()->intended('dashboard');
+    }
+
+    public function verification_notice()
+    {
+        return view('auth.verify-email');
     }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Tournament | Home</title>
+    <title>Laratition | Home</title>
     <!-- MDB icon -->
     <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"> -->
     <!-- Font Awesome -->
@@ -17,7 +17,7 @@
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}">
     <!-- css doodle -->
-    <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js') }}"></script>
+    <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
     <!-- css -->
     @yield('stylesheets')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
@@ -43,7 +43,7 @@
     <header>
         <!--Navbar -->
         <nav class="mb-1 navbar navbar-expand-lg fixed-top white scrolling-navbar">
-            <a class="navbar-brand" href="{{ route('welcome') }}">Tournament</a>
+            <a class="navbar-brand" href="{{ route('welcome') }}">Laratition</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
@@ -100,7 +100,7 @@
                     </li>
                     <li class="nav-item avatar dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/images/user.svg" class="rounded-circle z-depth-0" alt="avatar image">
+                            <img src="{{ asset('assets/images/user.svg') }}" class="rounded-circle z-depth-0" alt="avatar image">
                             {{ auth()->user()->username }}
                         </a>
                         <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">

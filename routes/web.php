@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\DashBoardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
-use Illuminate\Routing\RouteGroup;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,8 +27,24 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store'])->name('register');
 
+/* Verification Routes */
+Route::get('/email/verify', [RegisterController::class, 'verification_notice'])
+    ->middleware(['auth'])
+    ->name('verification.notice');
+Route::post('/email/verification-notification', function (Request $request) {
+    $request->user()->sendEmailVerificationNotification();
+
+    return back()->with('sent', 'Verification link sent!');
+})->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+
+    return redirect('/dashboard')->with('verified', 'You have been successifully verified');
+})->middleware(['auth', 'signed'])->name('verification.verify');
+
 
 Route::get('/', [PublicController::class, 'welcome'])->name('welcome');
+Route::get('/dashboard', [DashBoardController::class, 'index']);
 Route::get('competitions', [PublicController::class, 'competitions'])->name('competitions');
 Route::get('competition', [PublicController::class, 'competition'])->name('competition');
 Route::get('submissions', [PublicController::class, 'submissions'])->name('submissions');
