@@ -1,6 +1,10 @@
-# Tournament
+# Laratition
 
-Open source tournament managment platform, built in Laravel.
+Open source contest or tournament managment platform, built in Laravel. The name Laratition comes from hold up; 
+
+```php
+echo substr("Laravel", 0, 4).substr("competition", 5);
+```
 
 ## Features
 
@@ -10,7 +14,13 @@ Open source tournament managment platform, built in Laravel.
 - Leaderboard - Top users can be tracked on leaderboard
 
 
-## Installation
+### Dev Installation
+
+- `git clone https://github.com/Fenn-CS/Laratition.git`
+- `cd Laratition`
+- `composer install`
+- `php artisan serve` or access via webserver
+
 
 ## Screenshots
 
@@ -18,4 +28,4 @@ Open source tournament managment platform, built in Laravel.
 
 ## License
 
-Tournament is licensed under [MIT license](https://opensource.org/licenses/MIT).
+Laratition is licensed under [MIT license](https://opensource.org/licenses/MIT).
