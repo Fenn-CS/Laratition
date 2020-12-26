@@ -125,16 +125,16 @@
                 <div class="col-sm-12 col-md-4"></div>
                 <div class="col-sm-12 col-md-3">
                     <ul class="footer-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="challeneges.html">Challenges</a></li>
-                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="{{ route('welcome') }}">Home</a></li>
+                        <li><a href="{{ route('competitions') }}">Challenges</a></li>
+                        <li><a href="{{ route('leaderboard') }}">Leaderboard</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-3">
                     <ul class="footer-list">
-                        <li><a href="community.html">Community</a></li>
-                        <li><a href="mentors.html">Mentors</a></li>
-                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="{{ route('community') }}">Community</a></li>
+                        <li><a href="{{ route('mentors') }}">Mentors</a></li>
+                        <li><a href="{{ route('submissions') }}">Solutions</a></li>
                     </ul>
                 </div>
                 <div id="footer-icons" class="col-sm-12 col-md-2">

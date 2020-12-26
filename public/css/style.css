@@ -162,6 +162,25 @@ header .active-link {
     -o-border-radius: 10px;
 }
 /* ************* end of header styling ********************* */
+
+/* dashboard styles */
+.mt-dashboard {
+    margin-top: 6em;
+}
+.mb-push-footer {
+    margin-bottom: 25em;
+}
+
+.btn-dashboard {
+    background-color: var(--dark-blue-bg);
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-dashboard:hover {
+    color: #eee;
+}
+
 /* ************* start of challenge-title styling ********************* */
 .challenge-title-bg {
     width: 100vw;
