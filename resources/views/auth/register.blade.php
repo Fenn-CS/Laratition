@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('stylesheets')
+@section('head')
 <link rel="stylesheet" type="text/css" href="css/login-register.css">
 @endsection
 

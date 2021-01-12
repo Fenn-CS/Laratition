@@ -19,7 +19,7 @@
     <!-- css doodle -->
     <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
     <!-- css -->
-    @yield('stylesheets')
+    @yield('head')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -180,8 +180,7 @@
 
 
 
-    <!-- custom js -->
-    <script src="{{ asset('js/main.js') }}"></script>
+
     <!-- jQuery -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js') }}"></script> -->
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
@@ -197,6 +196,11 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- custom js -->
+    <script src="{{ asset('js/main.js') }}"></script>
+
+    @stack('scripts')
 
 </body>
 

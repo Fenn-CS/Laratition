@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
+@section('head')
+<link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
+<script>
+    window.authToken = "{{ Auth::user()->api_token }}";
+</script>
+@endsection
+
 @section('content')
 
 <div class="container-fluid mt-dashboard">
@@ -13,4 +20,12 @@
     @endif
 </div>
 
+<div id="app">
+<router-view></router-view>
+</div>
+
 @endsection
+
+@push('scripts')
+ <script src="{{ asset('js/app.js') }}"></script>
+@endpush

@@ -1,0 +1,219 @@
+.content {
+    padding-top: 2rem;
+    min-height: 90vh;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: var(--text);
+    margin-bottom: 3rem;
+}
+
+.create-card {
+    width: 45%;
+    height: 20vh;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    transition-duration: .3s;
+}
+
+.create-card:hover {
+    position: relative;
+    color: #fff;
+    transform: scale(1.05);
+    transition-duration: .3s;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.171);
+}
+
+.create-card h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.create-card p {
+    font-size: 20px;
+    /* font-weight: 700; */
+}
+
+.create-card-sub {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.create-competition .create-card-sub {
+    background-color: #007bffa9;
+    box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.089);
+}
+
+.view-submissions .create-card-sub {
+    background-color: #26de82a9;
+    box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.089);
+}
+
+.create-competition {
+    background-image: url(assets/pexels-pixabay-260024.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.view-submissions {
+    background: url(assets/pexels-george-becker-129742.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========== STYLING THE CREATE COMPETITION PAGE ================= */
+
+fieldset {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    /* background-color: red; */
+}
+
+h4 {
+    margin-bottom: 1rem;
+}
+
+label,
+.radio-span label:first-child {
+    font-size: 22px;
+    color: var(--dark-text);
+}
+
+input[type="file"] {
+    border: none;
+}
+
+input {
+    min-width: 25rem;
+    background-color: #fff !important;
+    height: 45px;
+    border-radius: 10px;
+    text-align: left !important;
+    padding: 0 1rem;
+    font-size: 18px;
+    color: var(--dark-text) !important;
+    border: 1px solid #aaa;
+    outline: none;
+}
+
+textarea:focus,
+input:focus {
+    border: 1px solid var(--primary);
+}
+
+textarea {
+    min-width: 450px;
+    min-height: 200px;
+    border-radius: 10px;
+    text-align: left !important;
+    padding: 0 1rem;
+    font-size: 18px;
+    color: var(--dark-text) !important;
+    border: 1px solid #aaa;
+    outline: none;
+}
+
+input[type="radio"] {
+    min-width: 20px !important;
+    width: 20px !important;
+    height: 20px;
+    margin: 0 1rem;
+}
+
+.radio-span span {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    /* margin-bottom: 1rem; */
+}
+
+.radio-span label {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.skill-con input[type="checkbox"],
+.tech-con input[type="checkbox"] {
+    display: none;
+}
+
+.skill-con input[type="checkbox"]:checked+.chip {
+    color: #fff;
+    background-color: var(--blue-bg);
+}
+
+.chip {
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+.chip:hover {
+    background-color: #bbb;
+}
+
+.tech-con {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.tech-con .skill {
+    cursor: pointer;
+}
+
+.tech-con input[type="checkbox"]:checked+label {
+    border: 4px solid rgba(0, 0, 255, 0.472) !important;
+}
+
+button[type="submit"] {
+    color: #fff;
+    background-color: var(--btn-green);
+    padding: .6rem 2rem;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--btn-green-hover);
+}
+
+.leaderboard-user-sub-1 {
+    display: grid;
+    color: var(--text) !important;
+}
+
+.leaderboard-user-sub-1 h3 {
+    color: var(--blue-bg) !important;
+}
+
+.leaderboard-user-sub-2 {
+    justify-content: flex-end;
+}
+
+.leaderboard-user-sub-2-sub {
+    width: 40% !important;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .create-card {
+        width: 90%;
+    }
+}
