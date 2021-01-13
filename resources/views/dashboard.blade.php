@@ -2,9 +2,6 @@
 
 @section('head')
 <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
-<script>
-    window.authToken = "{{ Auth::user()->api_token }}";
-</script>
 @endsection
 
 @section('content')

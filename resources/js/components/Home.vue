@@ -21,9 +21,10 @@
 </template>
 
 <script>
+    import LaratitionDataService from "../data-service";
     export default {
-        mounted() {
-            console.log('Home Component mounted.')
+        async mounted() {
+
         }
     }
 </script>
