@@ -15,7 +15,7 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .browserSync({
         proxy: "tournament.test",
-        port: 80,
+        // port: 80,
         ghostMode: false,
         notify: false
     });

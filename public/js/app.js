@@ -86,18 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@babel/runtime/regenerator/index.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
-
-
-/***/ }),
-
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -1920,13 +1908,369 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Dashboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard */ "./resources/js/components/Dashboard.vue");
 //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Home Component mounted.');
+  name: "CreateCompetition",
+  data: function data() {
+    return {};
+  },
+  components: {
+    DashboardLayout: _Dashboard__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  methods: {
+    init: function init() {}
+  },
+  mounted: function mounted() {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Dashboard.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Dashboard.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _css_app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css/app.css */ "./resources/css/app.css");
+/* harmony import */ var _css_app_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_app_css__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      hideSideNav: false,
+      showDropdown: false,
+      expandCompetitionLinks: false,
+      categories: [],
+      csrf: window.csrf,
+      user: ""
+    };
+  },
+  methods: {
+    toggleNav: function toggleNav() {
+      this.hideSideNav = !this.hideSideNav;
+    },
+    toggleDropdown: function toggleDropdown() {
+      this.showDropdown = !this.showDropdown;
+    },
+    logout: function logout() {
+      this.$refs.logoutButton.click();
+    }
+  },
+  mounted: function mounted() {//this.user = JSON.parse(window.user.replaceAll("&quot;", '"'));
   }
 });
 
@@ -1941,15 +2285,36 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data-service */ "./resources/js/data-service.js");
-
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
+/* harmony import */ var _Dashboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard */ "./resources/js/components/Dashboard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1974,30 +2339,583 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-      var data;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return _data_service__WEBPACK_IMPORTED_MODULE_1__["default"].createCompetition({
-                name: 'ABC'
-              });
+  name: "Home",
+  data: function data() {
+    return {};
+  },
+  components: {
+    DashboardLayout: _Dashboard__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  methods: {
+    init: function init() {}
+  },
+  mounted: function mounted() {}
+});
 
-            case 2:
-              data = _context.sent;
-              console.log(data);
+/***/ }),
 
-            case 4:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee);
-    }))();
-  }
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ReviewSubmission.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ReviewSubmission.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Dashboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard */ "./resources/js/components/Dashboard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ReviewCompetition",
+  data: function data() {
+    return {};
+  },
+  components: {
+    DashboardLayout: _Dashboard__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  methods: {
+    init: function init() {}
+  },
+  mounted: function mounted() {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Submissions.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Submissions.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Dashboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard */ "./resources/js/components/Dashboard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Submissions",
+  data: function data() {
+    return {};
+  },
+  components: {
+    DashboardLayout: _Dashboard__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  methods: {
+    init: function init() {}
+  },
+  mounted: function mounted() {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ViewCompetitions.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ViewCompetitions.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Dashboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard */ "./resources/js/components/Dashboard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ViewCompetitions",
+  data: function data() {
+    return {};
+  },
+  components: {
+    DashboardLayout: _Dashboard__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  methods: {
+    init: function init() {}
+  },
+  mounted: function mounted() {}
 });
 
 /***/ }),
@@ -6426,6 +7344,112 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 })));
 //# sourceMappingURL=bootstrap.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/app.css":
+/*!***************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/css/app.css ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ":root {\n    --primary-blue: #0984e3;\n    --secondary-blue: #0760a5;\n}\n\nbody {\n    overflow-x: hidden;\n    box-sizing: border-box;\n    font-family: \"Ubuntu\";\n}\n\n#main {\n    width: 100vw;\n    height: auto;\n    display: flex;\n}\n\n\n/* ======== SIDE NAVIGATOR STYLES ========== */\n\n#side-nav {\n    width: 15vw;\n    min-height: 100vh;\n    background-color: var(--primary-blue);\n    position: fixed;\n    left: 0;\n    top: 0;\n    z-index: 2;\n    transition-duration: .5s;\n    z-index: 3;\n}\n\n\n/* styling the side navigator animation */\n\n#side-nav.hide {\n    left: -15vw;\n    transition-duration: .5s;\n}\n\n#side-nav-toggle-btn {\n    width: 60px;\n    height: 60px;\n    background-color: var(--primary-blue);\n    color: #fff;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 30px;\n    transition-duration: .5s;\n}\n\n#side-nav-toggle-btn:hover {\n    background-color: var(--secondary-blue);\n    transition-duration: .5s;\n}\n\n#logo-con {\n    height: 60px;\n    background-color: #51a5e6;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 2rem;\n}\n\n#logo {\n    color: #fff;\n    font-weight: 500;\n    text-transform: uppercase;\n    font-size: 30px;\n}\n\n.sub-nav {\n    width: 100%;\n    height: auto;\n    margin-top: 1rem;\n}\n\n.sub-nav-title {\n    padding: 0 2rem;\n    font-size: 15px;\n    font-weight: 700;\n    color: rgba(255, 255, 255, 0.589);\n    margin-bottom: .3rem;\n}\n\n.sub-nav a {\n    display: flex;\n    width: 100%;\n    height: 60px;\n    background-color: transparent;\n    color: #fff;\n    align-items: center;\n    padding: 0 2rem;\n    font-weight: 400;\n    font-size: 18px;\n    transition-duration: .5s;\n}\n\n.sub-nav a:hover {\n    background-color: var(--secondary-blue);\n    transition-duration: .5s;\n}\n\n.sub-nav a i {\n    margin-right: 1rem;\n}\n\n.accordion {\n    outline: none;\n}\n\n.accordion-item::after {\n    display: none;\n}\n\n.accordion-collapse {\n    border: none !important;\n}\n\n.accordion-button {\n    background-color: var(--primary-blue) !important;\n    color: #fff !important;\n    border: none !important;\n}\n\n.accordion-button:hover {\n    background-color: var(--secondary-blue) !important;\n}\n\n.accordion-button.collapsed {\n    background-color: var(--primary-blue) !important;\n    color: #fff;\n    border: none !important;\n}\n\n.accordion-body {\n    background-color: #0760a5;\n    padding: 0;\n}\n\n.accordion-body a {\n    padding: 0 3rem;\n}\n\n.accordion-body a:hover {\n    background-color: #05477a;\n}\n\n.accordion .card {\n    overflow: inherit;\n}\n\n\n/* .dropdown-toggle {\n    float: left;\n}\n\n.dropdown-menu.show {\n    position: relative !important;\n    clear: both;\n    margin-top: 0;\n    transform: none !important;\n} */\n\n.side-nav-overlay {\n    min-width: 100vw;\n    min-height: 100vh;\n    background-color: rgba(0, 0, 0, 0.164);\n    -webkit-animation: hide-side-nav .3s ease-in-out;\n            animation: hide-side-nav .3s ease-in-out;\n    display: none;\n}\n\n\n/* ======== DASHBOARD CONTENT STYLES ========== */\n\n#dashboard-content {\n    width: calc(100vw - 14.5vw);\n    height: auto;\n    position: relative;\n    left: 15vw;\n    min-height: 100vh;\n    background-color: rgba(238, 238, 238, 0.521);\n    transition-duration: .5s;\n}\n\n\n/* styling the dashboard content animation */\n\n.breadcrumb-bar.expand,\n#dashboard-content header.expand,\n#dashboard-content.expand {\n    width: 100vw;\n    left: 0;\n    transition-duration: .5s !important;\n}\n\n#dashboard-content header {\n    width: calc(100vw - 15.8vw);\n    height: 60px;\n    background-color: #fff;\n    display: flex;\n    align-items: center;\n    border-bottom: 1px solid #ccc;\n    position: fixed;\n    top: 0;\n    right: 0;\n    left: 15vw;\n    transition-duration: .5s;\n    z-index: 2;\n}\n\n.header-sub {\n    width: 100%;\n    height: auto;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    padding: 0 2rem;\n}\n\n.header-sub nav {\n    width: auto;\n}\n\n.header-sub a {\n    color: #636e72;\n    font-weight: 400;\n    margin-right: 1rem;\n}\n\n.header-sub a:hover {\n    color: var(--primary-blue);\n}\n\n.user-board {\n    display: flex;\n}\n\n.user-board a,\n.user-board button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 40px;\n    height: 40px;\n}\n\n.user-board button {\n    border: none;\n    border-radius: 50%;\n    background-position: center !important;\n    background-size: cover !important;\n    background-repeat: no-repeat !important;\n}\n\n.breadcrumb-bar {\n    width: calc(100vw - 15.8vw);\n    height: 40px;\n    position: fixed;\n    right: 0;\n    left: 15vw;\n    top: 60px;\n    background-color: #fff;\n    margin-bottom: 3rem;\n    padding: 0 1rem;\n    display: grid;\n    align-content: center;\n    transition-duration: .5s;\n    z-index: 2;\n}\n\n.breadcrumb {\n    margin: 0 !important;\n}\n\n.main-content {\n    margin-top: 130px;\n}\n\n.row {\n    margin-bottom: 1rem;\n}\n\n.sub {\n    height: 10vh;\n    background-color: #ddd;\n}\n\n.sub.top {\n    display: grid;\n    align-content: center;\n    justify-content: center;\n    text-align: center;\n    background-color: #fff;\n    border: 1px solid #ddd;\n}\n\n.sub.top h3 {\n    font-weight: 400;\n    font-size: 18px;\n    text-transform: uppercase;\n    color: #888;\n}\n\n.sub.top .top-value {\n    font-weight: 700;\n    font-size: 22px;\n    text-transform: uppercase;\n}\n\n.challenge-sub {\n    height: 20vh;\n    display: block;\n    background-position: center !important;\n    background-size: 100% !important;\n    background-repeat: no-repeat !important;\n    transition-duration: .3s;\n}\n\n.challenge-sub:hover {\n    background-size: 120% !important;\n    transition-duration: .3s;\n}\n\n.challenge-sub-sub {\n    width: 100%;\n    height: 100%;\n    display: grid;\n    align-content: center;\n    text-align: center;\n    font-size: 40px;\n    font-weight: 700;\n    color: #fff;\n    text-transform: uppercase;\n}\n\n.challenge-sub-sub.create {\n    background-color: rgba(65, 111, 211, 0.563);\n}\n\n.challenge-sub-sub.submission {\n    background-color: rgba(65, 211, 101, 0.563);\n}\n\n.challenge-sub-sub.create:hover {\n    background-color: rgba(65, 111, 211, 0.733);\n    transition-duration: .3s;\n}\n\n.challenge-sub-sub.submission:hover {\n    background-color: rgba(65, 211, 101, 0.733);\n    transition-duration: .3s;\n}\n\n\n/* =========== STYLING THE CREATE COMPETITION PAGE ================= */\n\nh1 {\n    text-align: center;\n}\n\nform {\n    background-color: #fff;\n    padding: 1rem;\n    width: 80%;\n    margin: 0 auto;\n}\n\nfieldset {\n    width: 100%;\n    height: auto;\n    border-bottom: 2px solid #eee;\n    padding-bottom: 2rem;\n    margin-bottom: 2rem;\n    /* background-color: red; */\n}\n\nh4 {\n    margin-bottom: 1rem;\n    text-transform: uppercase;\n    font-weight: 700;\n}\n\nselect {\n    width: 100%;\n    height: 50px;\n    border: 1px solid #ddd;\n    background-color: #fff;\n    outline: none;\n    color: #666;\n    font-size: 18px;\n    padding: 0 1rem;\n}\n\nselect option {\n    height: 45px !important;\n}\n\nlabel,\n.radio-span label:first-child {\n    font-size: 22px;\n    /* font-weight: 500; */\n    color: var(--dark-text);\n    margin-bottom: 1rem;\n}\n\nlabel[for=\"challenge-pic\"] {\n    background-color: var(--primary-blue);\n    padding: .5rem 1rem;\n    transition-duration: .3s;\n    color: #fff;\n}\n\nlabel[for=\"challenge-pic\"]:hover {\n    background-color: var(--secondary-blue);\n    transition-duration: .3s;\n    color: #fff;\n}\n\ninput[type=\"file\"] {\n    border: none;\n    display: none;\n}\n\ninput {\n    width: 100%;\n    background-color: #fff !important;\n    height: 45px;\n    text-align: left !important;\n    padding: 0 1rem;\n    font-size: 18px;\n    color: var(--dark-text) !important;\n    border: 1px solid #ddd;\n    outline: none;\n}\n\ntextarea:focus,\ninput:focus {\n    border: 1px solid var(--primary-blue);\n}\n\ntextarea {\n    width: 100%;\n    min-height: 200px;\n    text-align: left !important;\n    padding: 0 1rem;\n    font-size: 18px;\n    color: var(--dark-text) !important;\n    border: 1px solid #ddd;\n    outline: none;\n}\n\ninput[type=\"radio\"] {\n    min-width: 20px !important;\n    width: 20px !important;\n    height: 20px;\n    margin: 0 1rem;\n}\n\n.radio-span span {\n    width: auto;\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    height: 50px;\n    /* margin-bottom: 1rem; */\n}\n\n.radio-span label {\n    margin-bottom: 0;\n    font-size: 18px;\n}\n\n.skill-con input[type=\"checkbox\"],\n.tech-con input[type=\"checkbox\"] {\n    display: none;\n}\n\n.skill-con input[type=\"checkbox\"]:checked+.chip {\n    color: #fff;\n    background-color: var(--primary-blue);\n}\n\n.chip {\n    border-radius: 50px;\n}\n\n.chip:hover {\n    background-color: var(--secondary-blue);\n}\n\n.tech-con {\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: row;\n}\n\n.tech-con .skill {\n    cursor: pointer;\n}\n\n.tech-con input[type=\"checkbox\"]+label {\n    border: 4px solid rgba(250, 250, 250) !important;\n}\n\n.tech-con input[type=\"checkbox\"]:checked+label {\n    border: 4px solid rgba(0, 0, 255, 0.472) !important;\n}\n\nbutton[type=\"submit\"] {\n    color: #fff;\n    background-color: var(--btn-green);\n    padding: .6rem 2rem;\n    font-size: 20px;\n    margin: 0 auto;\n    display: block;\n    margin-bottom: 3rem;\n}\n\nbutton[type=\"submit\"]:hover {\n    background-color: var(--btn-green-hover);\n}\n\n.leaderboard-user-sub-1 {\n    display: grid;\n    color: var(--text) !important;\n}\n\n.leaderboard-user-sub-1 h3 {\n    color: var(--blue-bg) !important;\n}\n\n.leaderboard-user-sub-2 {\n    justify-content: flex-end;\n}\n\n.leaderboard-user-sub-2-sub {\n    width: 40% !important;\n    margin-left: 1rem;\n}\n\n.chip {\n    background-color: #bbb;\n    color: #fff;\n    padding: 5px 10px;\n    font-weight: 700;\n    font-size: 16px;\n    margin-top: 5px;\n    margin-right: 5px;\n    /* margin-bottom: 1rem; */\n    border-radius: 0px;\n    -webkit-border-radius: 0px;\n    -moz-border-radius: 0px;\n    -ms-border-radius: 0px;\n    -o-border-radius: 0px;\n}\n\n.skill {\n    /* background-color: antiquewhite; */\n    margin-right: 10px;\n    box-sizing: border-box;\n    margin-bottom: 1rem !important;\n    font-size: 13px;\n    padding: 0 10px;\n    display: flex;\n    height: auto;\n    /* border-radius: 8px;\n    -webkit-border-radius: 8px;\n    -moz-border-radius: 8px;\n    -ms-border-radius: 8px;\n    -o-border-radius: 8px; */\n}\n\n.skill i {\n    height: 100%;\n    display: grid;\n    align-content: center;\n    font-size: 15px;\n    margin-right: 5px;\n}\n\n.skill p {\n    height: 100%;\n    display: grid;\n    align-content: center;\n    font-weight: 600;\n}\n\n.html {\n    background-color: #e67e22;\n    color: var(--white-txt);\n}\n\n.css {\n    background-color: #3498db;\n    color: var(--white-txt);\n}\n\n.js {\n    background-color: #f1c40f;\n}\n\n.node-js {\n    background-color: #3C873A;\n    color: #fff;\n}\n\n.angular-js {\n    background-color: #B52E31;\n    color: #fff;\n}\n\n.react-js {\n    color: var(--primary-blue);\n    background-color: rgb(21, 26, 34);\n}\n\n.vue-js {\n    background-color: #42b883;\n}\n\nbutton[type=\"submit\"] {\n    background-color: var(--primary-blue);\n    color: #fff;\n    font-weight: 700;\n    border: none;\n    transition-duration: .3s;\n}\n\nbutton[type=\"submit\"]:hover {\n    background-color: var(--secondary-blue);\n    transition-duration: .3s;\n}\n\ntable {\n    background-color: #fff;\n    font-size: 18px;\n}\n\nh1 {\n    font-weight: 400;\n    color: var(--primary-blue);\n}\n\ntbody td {\n    max-width: 15vw;\n}\n\ntbody form {\n    display: flex;\n    width: 70%;\n    margin: 0 !important;\n    background-color: transparent;\n}\n\ntbody fieldset {\n    border-bottom: none;\n    margin: 0;\n    padding: 0;\n    /* background-color: red; */\n    display: grid;\n    align-content: center;\n    justify-content: flex-start;\n    width: 100px;\n}\n\ntbody fieldset label {\n    margin: 0;\n}\n\ntbody fieldset input {\n    margin: 0 !important;\n}\n\n\n/* ========= RATE SUBMISSION STYLES ========== */\n\n.rate-submission p {\n    font-size: 18px;\n}\n\n.submission-time {\n    display: flex;\n    justify-content: space-between;\n}\n\n.early-or-late {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n    display: flex;\n    justify-content: flex-end;\n}\n\n.early-or-late .early {\n    color: rgb(89, 204, 89);\n}\n\n.early-or-late .late {\n    color: rgb(253, 35, 35);\n}\n\n.file-card {\n    width: 250px;\n    height: 60px;\n    background-color: #0985e331;\n    color: #000;\n    /* color: var(--primary-blue); */\n    font-weight: 700;\n    display: flex;\n}\n\n.file-icon {\n    width: 60px;\n    height: 60px;\n    position: relative;\n    transform: scale(.8);\n    background-color: var(--primary-blue);\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 40px;\n    color: #fff;\n}\n\n.file-name {\n    display: block;\n    height: auto;\n    padding-top: .5rem;\n}\n\n.file-size {\n    font-weight: 300;\n    margin-bottom: .5rem !important;\n    display: block;\n}\n\n.links {\n    display: grid;\n    justify-content: flex-end;\n}\n\n#final-rating input {\n    display: none;\n}\n\n#final-rating input:checked+label {\n    background-color: var(--primary-blue);\n}\n\n#final-rating label {\n    width: 35px;\n    height: 35px;\n    color: #fff;\n    font-weight: 700;\n    background-color: #ccc;\n    text-align: center;\n}\n\n.final-rating-result div {\n    font-weight: 700;\n    font-size: 18px;\n    text-transform: uppercase;\n    /* display: none;\n    opacity: 0; */\n    transition-duration: .3s;\n}\n\n#rating-1+.very-poor-result {\n    font-size: 30px;\n    background-color: red;\n    display: block !important;\n    opacity: 1 !important;\n    transition-duration: .3s;\n}\n\n.final-rating-result .very-poor-result {\n    color: red;\n}\n\n.final-rating-result .poor-result {\n    color: rgb(240, 106, 29);\n}\n\n.final-rating-result .average-result {\n    color: rgb(255, 217, 0);\n}\n\n.final-rating-result .good-result {\n    color: rgb(186, 253, 2);\n}\n\n.final-rating-result .very-good-result {\n    color: rgb(89, 204, 89);\n}\n\n@media screen and (min-width: 768px) and (max-width: 1023px) {\n    /* ======== SIDE NAVIGATOR STYLES ========== */\n    #side-nav {\n        position: fixed;\n        top: 0;\n        bottom: 0;\n        width: 50vw;\n        left: -50vw;\n    }\n    /* styling the side navigator animation */\n    #side-nav.hide {\n        left: 0vw;\n        transition-duration: .5s;\n    }\n    #side-nav-toggle-btn {\n        position: fixed;\n        left: 0;\n        transition-duration: .5s;\n    }\n    #side-nav-toggle-btn.show {\n        left: 50vw;\n        transition-duration: .5s;\n    }\n    .side-nav-overlay.show {\n        display: block;\n        -webkit-animation: show-side-nav .3s ease-in-out;\n                animation: show-side-nav .3s ease-in-out;\n    }\n    @-webkit-keyframes show-side-nav {\n        0% {\n            opacity: 0;\n        }\n        100% {\n            opacity: 1;\n        }\n    }\n    @keyframes show-side-nav {\n        0% {\n            opacity: 0;\n        }\n        100% {\n            opacity: 1;\n        }\n    }\n    @-webkit-keyframes hide-side-nav {\n        0% {\n            opacity: 1;\n        }\n        100% {\n            opacity: 0;\n        }\n    }\n    @keyframes hide-side-nav {\n        0% {\n            opacity: 1;\n        }\n        100% {\n            opacity: 0;\n        }\n    }\n    /* ======== DASHBOARD CONTENT STYLES ========== */\n    #dashboard-content {\n        width: 100vw;\n        left: 0;\n    }\n    /* styling the dashboard content animation */\n    .breadcrumb-bar.expand,\n    #dashboard-content header.expand,\n    #dashboard-content.expand {\n        width: 100vw;\n        left: 0;\n        transition-duration: .5s !important;\n    }\n    #dashboard-content header {\n        width: 100vw;\n        left: 0;\n    }\n    .header-sub {\n        width: 100%;\n        margin-left: 60px;\n    }\n    .breadcrumb-bar {\n        width: 100vw;\n        left: 0;\n    }\n    form {\n        width: 70%;\n    }\n}\n\n@media screen and (max-width: 767px) {\n    /* ======== SIDE NAVIGATOR STYLES ========== */\n    #side-nav {\n        /* min-height: ; */\n        position: fixed;\n        top: 0;\n        bottom: 0;\n        width: calc(100vw - 60px);\n        left: calc(-100vw - 60px);\n    }\n    /* styling the side navigator animation */\n    #side-nav.hide {\n        left: 0vw;\n        transition-duration: .5s;\n    }\n    #side-nav-toggle-btn {\n        position: fixed;\n        left: 0;\n        transition-duration: .5s;\n    }\n    #side-nav-toggle-btn.show {\n        left: calc(100vw - 60px);\n        transition-duration: .5s;\n    }\n    .side-nav-overlay.show {\n        display: block;\n        -webkit-animation: show-side-nav .3s ease-in-out;\n                animation: show-side-nav .3s ease-in-out;\n    }\n    @-webkit-keyframes show-side-nav {\n        0% {\n            opacity: 0;\n        }\n        100% {\n            opacity: 1;\n        }\n    }\n    @keyframes show-side-nav {\n        0% {\n            opacity: 0;\n        }\n        100% {\n            opacity: 1;\n        }\n    }\n    @-webkit-keyframes hide-side-nav {\n        0% {\n            opacity: 1;\n        }\n        100% {\n            opacity: 0;\n        }\n    }\n    @keyframes hide-side-nav {\n        0% {\n            opacity: 1;\n        }\n        100% {\n            opacity: 0;\n        }\n    }\n    /* ======== DASHBOARD CONTENT STYLES ========== */\n    #dashboard-content {\n        width: 100vw;\n        left: 0;\n    }\n    /* styling the dashboard content animation */\n    .breadcrumb-bar.expand,\n    #dashboard-content header.expand,\n    #dashboard-content.expand {\n        width: 100vw;\n        left: 0;\n        transition-duration: .5s !important;\n    }\n    #dashboard-content header {\n        width: 100vw;\n        left: 0;\n    }\n    .header-sub {\n        width: 100%;\n        margin-left: 60px;\n        justify-content: flex-end;\n        padding: 0 1rem 0 0 !important;\n    }\n    #header-navigator {\n        display: none !important;\n    }\n    .breadcrumb-bar {\n        width: 100vw;\n        left: 0;\n    }\n    .sub.top {\n        height: 12vh;\n        margin-bottom: 1rem;\n    }\n    .challenge-sub-sub {\n        margin: 0 !important;\n        font-size: 28px;\n    }\n    form {\n        width: 100%;\n    }\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/lib/css-base.js":
+/*!*************************************************!*\
+  !*** ./node_modules/css-loader/lib/css-base.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
 
 
 /***/ }),
@@ -37304,765 +38328,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "./node_modules/regenerator-runtime/runtime.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/regenerator-runtime/runtime.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-var runtime = (function (exports) {
-  "use strict";
-
-  var Op = Object.prototype;
-  var hasOwn = Op.hasOwnProperty;
-  var undefined; // More compressible than void 0.
-  var $Symbol = typeof Symbol === "function" ? Symbol : {};
-  var iteratorSymbol = $Symbol.iterator || "@@iterator";
-  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
-  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
-
-  function define(obj, key, value) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-    return obj[key];
-  }
-  try {
-    // IE 8 has a broken Object.defineProperty that only works on DOM objects.
-    define({}, "");
-  } catch (err) {
-    define = function(obj, key, value) {
-      return obj[key] = value;
-    };
-  }
-
-  function wrap(innerFn, outerFn, self, tryLocsList) {
-    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
-    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
-    var generator = Object.create(protoGenerator.prototype);
-    var context = new Context(tryLocsList || []);
-
-    // The ._invoke method unifies the implementations of the .next,
-    // .throw, and .return methods.
-    generator._invoke = makeInvokeMethod(innerFn, self, context);
-
-    return generator;
-  }
-  exports.wrap = wrap;
-
-  // Try/catch helper to minimize deoptimizations. Returns a completion
-  // record like context.tryEntries[i].completion. This interface could
-  // have been (and was previously) designed to take a closure to be
-  // invoked without arguments, but in all the cases we care about we
-  // already have an existing method we want to call, so there's no need
-  // to create a new function object. We can even get away with assuming
-  // the method takes exactly one argument, since that happens to be true
-  // in every case, so we don't have to touch the arguments object. The
-  // only additional allocation required is the completion record, which
-  // has a stable shape and so hopefully should be cheap to allocate.
-  function tryCatch(fn, obj, arg) {
-    try {
-      return { type: "normal", arg: fn.call(obj, arg) };
-    } catch (err) {
-      return { type: "throw", arg: err };
-    }
-  }
-
-  var GenStateSuspendedStart = "suspendedStart";
-  var GenStateSuspendedYield = "suspendedYield";
-  var GenStateExecuting = "executing";
-  var GenStateCompleted = "completed";
-
-  // Returning this object from the innerFn has the same effect as
-  // breaking out of the dispatch switch statement.
-  var ContinueSentinel = {};
-
-  // Dummy constructor functions that we use as the .constructor and
-  // .constructor.prototype properties for functions that return Generator
-  // objects. For full spec compliance, you may wish to configure your
-  // minifier not to mangle the names of these two functions.
-  function Generator() {}
-  function GeneratorFunction() {}
-  function GeneratorFunctionPrototype() {}
-
-  // This is a polyfill for %IteratorPrototype% for environments that
-  // don't natively support it.
-  var IteratorPrototype = {};
-  IteratorPrototype[iteratorSymbol] = function () {
-    return this;
-  };
-
-  var getProto = Object.getPrototypeOf;
-  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
-  if (NativeIteratorPrototype &&
-      NativeIteratorPrototype !== Op &&
-      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
-    // This environment has a native %IteratorPrototype%; use it instead
-    // of the polyfill.
-    IteratorPrototype = NativeIteratorPrototype;
-  }
-
-  var Gp = GeneratorFunctionPrototype.prototype =
-    Generator.prototype = Object.create(IteratorPrototype);
-  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
-  GeneratorFunctionPrototype.constructor = GeneratorFunction;
-  GeneratorFunction.displayName = define(
-    GeneratorFunctionPrototype,
-    toStringTagSymbol,
-    "GeneratorFunction"
-  );
-
-  // Helper for defining the .next, .throw, and .return methods of the
-  // Iterator interface in terms of a single ._invoke method.
-  function defineIteratorMethods(prototype) {
-    ["next", "throw", "return"].forEach(function(method) {
-      define(prototype, method, function(arg) {
-        return this._invoke(method, arg);
-      });
-    });
-  }
-
-  exports.isGeneratorFunction = function(genFun) {
-    var ctor = typeof genFun === "function" && genFun.constructor;
-    return ctor
-      ? ctor === GeneratorFunction ||
-        // For the native GeneratorFunction constructor, the best we can
-        // do is to check its .name property.
-        (ctor.displayName || ctor.name) === "GeneratorFunction"
-      : false;
-  };
-
-  exports.mark = function(genFun) {
-    if (Object.setPrototypeOf) {
-      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
-    } else {
-      genFun.__proto__ = GeneratorFunctionPrototype;
-      define(genFun, toStringTagSymbol, "GeneratorFunction");
-    }
-    genFun.prototype = Object.create(Gp);
-    return genFun;
-  };
-
-  // Within the body of any async function, `await x` is transformed to
-  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
-  // `hasOwn.call(value, "__await")` to determine if the yielded value is
-  // meant to be awaited.
-  exports.awrap = function(arg) {
-    return { __await: arg };
-  };
-
-  function AsyncIterator(generator, PromiseImpl) {
-    function invoke(method, arg, resolve, reject) {
-      var record = tryCatch(generator[method], generator, arg);
-      if (record.type === "throw") {
-        reject(record.arg);
-      } else {
-        var result = record.arg;
-        var value = result.value;
-        if (value &&
-            typeof value === "object" &&
-            hasOwn.call(value, "__await")) {
-          return PromiseImpl.resolve(value.__await).then(function(value) {
-            invoke("next", value, resolve, reject);
-          }, function(err) {
-            invoke("throw", err, resolve, reject);
-          });
-        }
-
-        return PromiseImpl.resolve(value).then(function(unwrapped) {
-          // When a yielded Promise is resolved, its final value becomes
-          // the .value of the Promise<{value,done}> result for the
-          // current iteration.
-          result.value = unwrapped;
-          resolve(result);
-        }, function(error) {
-          // If a rejected Promise was yielded, throw the rejection back
-          // into the async generator function so it can be handled there.
-          return invoke("throw", error, resolve, reject);
-        });
-      }
-    }
-
-    var previousPromise;
-
-    function enqueue(method, arg) {
-      function callInvokeWithMethodAndArg() {
-        return new PromiseImpl(function(resolve, reject) {
-          invoke(method, arg, resolve, reject);
-        });
-      }
-
-      return previousPromise =
-        // If enqueue has been called before, then we want to wait until
-        // all previous Promises have been resolved before calling invoke,
-        // so that results are always delivered in the correct order. If
-        // enqueue has not been called before, then it is important to
-        // call invoke immediately, without waiting on a callback to fire,
-        // so that the async generator function has the opportunity to do
-        // any necessary setup in a predictable way. This predictability
-        // is why the Promise constructor synchronously invokes its
-        // executor callback, and why async functions synchronously
-        // execute code before the first await. Since we implement simple
-        // async functions in terms of async generators, it is especially
-        // important to get this right, even though it requires care.
-        previousPromise ? previousPromise.then(
-          callInvokeWithMethodAndArg,
-          // Avoid propagating failures to Promises returned by later
-          // invocations of the iterator.
-          callInvokeWithMethodAndArg
-        ) : callInvokeWithMethodAndArg();
-    }
-
-    // Define the unified helper method that is used to implement .next,
-    // .throw, and .return (see defineIteratorMethods).
-    this._invoke = enqueue;
-  }
-
-  defineIteratorMethods(AsyncIterator.prototype);
-  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
-    return this;
-  };
-  exports.AsyncIterator = AsyncIterator;
-
-  // Note that simple async functions are implemented on top of
-  // AsyncIterator objects; they just return a Promise for the value of
-  // the final result produced by the iterator.
-  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
-    if (PromiseImpl === void 0) PromiseImpl = Promise;
-
-    var iter = new AsyncIterator(
-      wrap(innerFn, outerFn, self, tryLocsList),
-      PromiseImpl
-    );
-
-    return exports.isGeneratorFunction(outerFn)
-      ? iter // If outerFn is a generator, return the full iterator.
-      : iter.next().then(function(result) {
-          return result.done ? result.value : iter.next();
-        });
-  };
-
-  function makeInvokeMethod(innerFn, self, context) {
-    var state = GenStateSuspendedStart;
-
-    return function invoke(method, arg) {
-      if (state === GenStateExecuting) {
-        throw new Error("Generator is already running");
-      }
-
-      if (state === GenStateCompleted) {
-        if (method === "throw") {
-          throw arg;
-        }
-
-        // Be forgiving, per 25.3.3.3.3 of the spec:
-        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
-        return doneResult();
-      }
-
-      context.method = method;
-      context.arg = arg;
-
-      while (true) {
-        var delegate = context.delegate;
-        if (delegate) {
-          var delegateResult = maybeInvokeDelegate(delegate, context);
-          if (delegateResult) {
-            if (delegateResult === ContinueSentinel) continue;
-            return delegateResult;
-          }
-        }
-
-        if (context.method === "next") {
-          // Setting context._sent for legacy support of Babel's
-          // function.sent implementation.
-          context.sent = context._sent = context.arg;
-
-        } else if (context.method === "throw") {
-          if (state === GenStateSuspendedStart) {
-            state = GenStateCompleted;
-            throw context.arg;
-          }
-
-          context.dispatchException(context.arg);
-
-        } else if (context.method === "return") {
-          context.abrupt("return", context.arg);
-        }
-
-        state = GenStateExecuting;
-
-        var record = tryCatch(innerFn, self, context);
-        if (record.type === "normal") {
-          // If an exception is thrown from innerFn, we leave state ===
-          // GenStateExecuting and loop back for another invocation.
-          state = context.done
-            ? GenStateCompleted
-            : GenStateSuspendedYield;
-
-          if (record.arg === ContinueSentinel) {
-            continue;
-          }
-
-          return {
-            value: record.arg,
-            done: context.done
-          };
-
-        } else if (record.type === "throw") {
-          state = GenStateCompleted;
-          // Dispatch the exception by looping back around to the
-          // context.dispatchException(context.arg) call above.
-          context.method = "throw";
-          context.arg = record.arg;
-        }
-      }
-    };
-  }
-
-  // Call delegate.iterator[context.method](context.arg) and handle the
-  // result, either by returning a { value, done } result from the
-  // delegate iterator, or by modifying context.method and context.arg,
-  // setting context.delegate to null, and returning the ContinueSentinel.
-  function maybeInvokeDelegate(delegate, context) {
-    var method = delegate.iterator[context.method];
-    if (method === undefined) {
-      // A .throw or .return when the delegate iterator has no .throw
-      // method always terminates the yield* loop.
-      context.delegate = null;
-
-      if (context.method === "throw") {
-        // Note: ["return"] must be used for ES3 parsing compatibility.
-        if (delegate.iterator["return"]) {
-          // If the delegate iterator has a return method, give it a
-          // chance to clean up.
-          context.method = "return";
-          context.arg = undefined;
-          maybeInvokeDelegate(delegate, context);
-
-          if (context.method === "throw") {
-            // If maybeInvokeDelegate(context) changed context.method from
-            // "return" to "throw", let that override the TypeError below.
-            return ContinueSentinel;
-          }
-        }
-
-        context.method = "throw";
-        context.arg = new TypeError(
-          "The iterator does not provide a 'throw' method");
-      }
-
-      return ContinueSentinel;
-    }
-
-    var record = tryCatch(method, delegate.iterator, context.arg);
-
-    if (record.type === "throw") {
-      context.method = "throw";
-      context.arg = record.arg;
-      context.delegate = null;
-      return ContinueSentinel;
-    }
-
-    var info = record.arg;
-
-    if (! info) {
-      context.method = "throw";
-      context.arg = new TypeError("iterator result is not an object");
-      context.delegate = null;
-      return ContinueSentinel;
-    }
-
-    if (info.done) {
-      // Assign the result of the finished delegate to the temporary
-      // variable specified by delegate.resultName (see delegateYield).
-      context[delegate.resultName] = info.value;
-
-      // Resume execution at the desired location (see delegateYield).
-      context.next = delegate.nextLoc;
-
-      // If context.method was "throw" but the delegate handled the
-      // exception, let the outer generator proceed normally. If
-      // context.method was "next", forget context.arg since it has been
-      // "consumed" by the delegate iterator. If context.method was
-      // "return", allow the original .return call to continue in the
-      // outer generator.
-      if (context.method !== "return") {
-        context.method = "next";
-        context.arg = undefined;
-      }
-
-    } else {
-      // Re-yield the result returned by the delegate method.
-      return info;
-    }
-
-    // The delegate iterator is finished, so forget it and continue with
-    // the outer generator.
-    context.delegate = null;
-    return ContinueSentinel;
-  }
-
-  // Define Generator.prototype.{next,throw,return} in terms of the
-  // unified ._invoke helper method.
-  defineIteratorMethods(Gp);
-
-  define(Gp, toStringTagSymbol, "Generator");
-
-  // A Generator should always return itself as the iterator object when the
-  // @@iterator function is called on it. Some browsers' implementations of the
-  // iterator prototype chain incorrectly implement this, causing the Generator
-  // object to not be returned from this call. This ensures that doesn't happen.
-  // See https://github.com/facebook/regenerator/issues/274 for more details.
-  Gp[iteratorSymbol] = function() {
-    return this;
-  };
-
-  Gp.toString = function() {
-    return "[object Generator]";
-  };
-
-  function pushTryEntry(locs) {
-    var entry = { tryLoc: locs[0] };
-
-    if (1 in locs) {
-      entry.catchLoc = locs[1];
-    }
-
-    if (2 in locs) {
-      entry.finallyLoc = locs[2];
-      entry.afterLoc = locs[3];
-    }
-
-    this.tryEntries.push(entry);
-  }
-
-  function resetTryEntry(entry) {
-    var record = entry.completion || {};
-    record.type = "normal";
-    delete record.arg;
-    entry.completion = record;
-  }
-
-  function Context(tryLocsList) {
-    // The root entry object (effectively a try statement without a catch
-    // or a finally block) gives us a place to store values thrown from
-    // locations where there is no enclosing try statement.
-    this.tryEntries = [{ tryLoc: "root" }];
-    tryLocsList.forEach(pushTryEntry, this);
-    this.reset(true);
-  }
-
-  exports.keys = function(object) {
-    var keys = [];
-    for (var key in object) {
-      keys.push(key);
-    }
-    keys.reverse();
-
-    // Rather than returning an object with a next method, we keep
-    // things simple and return the next function itself.
-    return function next() {
-      while (keys.length) {
-        var key = keys.pop();
-        if (key in object) {
-          next.value = key;
-          next.done = false;
-          return next;
-        }
-      }
-
-      // To avoid creating an additional object, we just hang the .value
-      // and .done properties off the next function object itself. This
-      // also ensures that the minifier will not anonymize the function.
-      next.done = true;
-      return next;
-    };
-  };
-
-  function values(iterable) {
-    if (iterable) {
-      var iteratorMethod = iterable[iteratorSymbol];
-      if (iteratorMethod) {
-        return iteratorMethod.call(iterable);
-      }
-
-      if (typeof iterable.next === "function") {
-        return iterable;
-      }
-
-      if (!isNaN(iterable.length)) {
-        var i = -1, next = function next() {
-          while (++i < iterable.length) {
-            if (hasOwn.call(iterable, i)) {
-              next.value = iterable[i];
-              next.done = false;
-              return next;
-            }
-          }
-
-          next.value = undefined;
-          next.done = true;
-
-          return next;
-        };
-
-        return next.next = next;
-      }
-    }
-
-    // Return an iterator with no values.
-    return { next: doneResult };
-  }
-  exports.values = values;
-
-  function doneResult() {
-    return { value: undefined, done: true };
-  }
-
-  Context.prototype = {
-    constructor: Context,
-
-    reset: function(skipTempReset) {
-      this.prev = 0;
-      this.next = 0;
-      // Resetting context._sent for legacy support of Babel's
-      // function.sent implementation.
-      this.sent = this._sent = undefined;
-      this.done = false;
-      this.delegate = null;
-
-      this.method = "next";
-      this.arg = undefined;
-
-      this.tryEntries.forEach(resetTryEntry);
-
-      if (!skipTempReset) {
-        for (var name in this) {
-          // Not sure about the optimal order of these conditions:
-          if (name.charAt(0) === "t" &&
-              hasOwn.call(this, name) &&
-              !isNaN(+name.slice(1))) {
-            this[name] = undefined;
-          }
-        }
-      }
-    },
-
-    stop: function() {
-      this.done = true;
-
-      var rootEntry = this.tryEntries[0];
-      var rootRecord = rootEntry.completion;
-      if (rootRecord.type === "throw") {
-        throw rootRecord.arg;
-      }
-
-      return this.rval;
-    },
-
-    dispatchException: function(exception) {
-      if (this.done) {
-        throw exception;
-      }
-
-      var context = this;
-      function handle(loc, caught) {
-        record.type = "throw";
-        record.arg = exception;
-        context.next = loc;
-
-        if (caught) {
-          // If the dispatched exception was caught by a catch block,
-          // then let that catch block handle the exception normally.
-          context.method = "next";
-          context.arg = undefined;
-        }
-
-        return !! caught;
-      }
-
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        var record = entry.completion;
-
-        if (entry.tryLoc === "root") {
-          // Exception thrown outside of any try block that could handle
-          // it, so set the completion value of the entire function to
-          // throw the exception.
-          return handle("end");
-        }
-
-        if (entry.tryLoc <= this.prev) {
-          var hasCatch = hasOwn.call(entry, "catchLoc");
-          var hasFinally = hasOwn.call(entry, "finallyLoc");
-
-          if (hasCatch && hasFinally) {
-            if (this.prev < entry.catchLoc) {
-              return handle(entry.catchLoc, true);
-            } else if (this.prev < entry.finallyLoc) {
-              return handle(entry.finallyLoc);
-            }
-
-          } else if (hasCatch) {
-            if (this.prev < entry.catchLoc) {
-              return handle(entry.catchLoc, true);
-            }
-
-          } else if (hasFinally) {
-            if (this.prev < entry.finallyLoc) {
-              return handle(entry.finallyLoc);
-            }
-
-          } else {
-            throw new Error("try statement without catch or finally");
-          }
-        }
-      }
-    },
-
-    abrupt: function(type, arg) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc <= this.prev &&
-            hasOwn.call(entry, "finallyLoc") &&
-            this.prev < entry.finallyLoc) {
-          var finallyEntry = entry;
-          break;
-        }
-      }
-
-      if (finallyEntry &&
-          (type === "break" ||
-           type === "continue") &&
-          finallyEntry.tryLoc <= arg &&
-          arg <= finallyEntry.finallyLoc) {
-        // Ignore the finally entry if control is not jumping to a
-        // location outside the try/catch block.
-        finallyEntry = null;
-      }
-
-      var record = finallyEntry ? finallyEntry.completion : {};
-      record.type = type;
-      record.arg = arg;
-
-      if (finallyEntry) {
-        this.method = "next";
-        this.next = finallyEntry.finallyLoc;
-        return ContinueSentinel;
-      }
-
-      return this.complete(record);
-    },
-
-    complete: function(record, afterLoc) {
-      if (record.type === "throw") {
-        throw record.arg;
-      }
-
-      if (record.type === "break" ||
-          record.type === "continue") {
-        this.next = record.arg;
-      } else if (record.type === "return") {
-        this.rval = this.arg = record.arg;
-        this.method = "return";
-        this.next = "end";
-      } else if (record.type === "normal" && afterLoc) {
-        this.next = afterLoc;
-      }
-
-      return ContinueSentinel;
-    },
-
-    finish: function(finallyLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.finallyLoc === finallyLoc) {
-          this.complete(entry.completion, entry.afterLoc);
-          resetTryEntry(entry);
-          return ContinueSentinel;
-        }
-      }
-    },
-
-    "catch": function(tryLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc === tryLoc) {
-          var record = entry.completion;
-          if (record.type === "throw") {
-            var thrown = record.arg;
-            resetTryEntry(entry);
-          }
-          return thrown;
-        }
-      }
-
-      // The context.catch method must only be called with a location
-      // argument that corresponds to a known catch block.
-      throw new Error("illegal catch attempt");
-    },
-
-    delegateYield: function(iterable, resultName, nextLoc) {
-      this.delegate = {
-        iterator: values(iterable),
-        resultName: resultName,
-        nextLoc: nextLoc
-      };
-
-      if (this.method === "next") {
-        // Deliberately forget the last sent value so that we don't
-        // accidentally pass it on to the delegate.
-        this.arg = undefined;
-      }
-
-      return ContinueSentinel;
-    }
-  };
-
-  // Regardless of whether this script is executing as a CommonJS module
-  // or not, return the runtime object so that we can declare the variable
-  // regeneratorRuntime in the outer scope, which allows this module to be
-  // injected easily by `bin/regenerator --include-runtime script.js`.
-  return exports;
-
-}(
-  // If this script is executing as a CommonJS module, use module.exports
-  // as the regeneratorRuntime namespace. Otherwise create a new empty
-  // object. Either way, the resulting object will be used to initialize
-  // the regeneratorRuntime variable at the top of this file.
-   true ? module.exports : undefined
-));
-
-try {
-  regeneratorRuntime = runtime;
-} catch (accidentalStrictMode) {
-  // This module should not be running in strict mode, so the above
-  // assignment should always work unless something is misconfigured. Just
-  // in case runtime.js accidentally runs in strict mode, we can escape
-  // strict mode using a global Function call. This could conceivably fail
-  // if a Content Security Policy forbids using Function, but in that case
-  // the proper solution is to fix the accidental strict mode problem. If
-  // you've misconfigured your bundler to force strict mode and applied a
-  // CSP to forbid Function, and you're not willing to fix either of those
-  // problems, please detail your unique predicament in a GitHub issue.
-  Function("r", "regeneratorRuntime = r")(runtime);
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/setimmediate/setImmediate.js":
 /*!***************************************************!*\
   !*** ./node_modules/setimmediate/setImmediate.js ***!
@@ -38261,6 +38526,515 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/lib/addStyles.js":
+/*!****************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyles.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target, parent) {
+  if (parent){
+    return parent.querySelector(target);
+  }
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target, parent) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target, parent);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
+})();
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertAt.before, target);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+
+	if(options.attrs.nonce === undefined) {
+		var nonce = getNonce();
+		if (nonce) {
+			options.attrs.nonce = nonce;
+		}
+	}
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function getNonce() {
+	if (false) {}
+
+	return __webpack_require__.nc;
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = typeof options.transform === 'function'
+		 ? options.transform(obj.css) 
+		 : options.transform.default(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/lib/urls.js":
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/timers-browserify/main.js":
 /*!************************************************!*\
   !*** ./node_modules/timers-browserify/main.js ***!
@@ -38351,9 +39125,638 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("dashboard-layout", [
+    _c("div", { staticClass: "container-fluid main-content" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("h1", [_vm._v("Create a challenge")]),
+            _vm._v(" "),
+            _c("form", [
+              _c("ol", [
+                _c("li", [
+                  _c("h3", [_vm._v("Choose a picture for your challenge")]),
+                  _vm._v(" "),
+                  _c("fieldset", [
+                    _c("label", { attrs: { for: "challenge-pic" } }, [
+                      _c("i", { staticClass: "fas fa-camera" }),
+                      _vm._v(" Upload Photo")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("input", {
+                      attrs: { type: "file", name: "", id: "challenge-pic" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Challenge details")]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", [
+                    _c("label", { attrs: { for: "challenge-title" } }, [
+                      _vm._v("Enter the challenge title")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("input", {
+                      attrs: {
+                        type: "text",
+                        id: "challenge-title",
+                        placeholder: "Title goes here"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", [
+                    _c("label", { attrs: { for: "challenge-title" } }, [
+                      _vm._v("Enter the challenge title")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("select", { attrs: { name: "", id: "" } }, [
+                      _c("option", { attrs: { value: "", selected: "" } }, [
+                        _vm._v(
+                          "\n                      What type of challenge is it\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Option one")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Option two")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Option three")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Option four")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Option five")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", [
+                    _c("label", { attrs: { for: "challenge-details" } }, [
+                      _vm._v("Enter the challenge details")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("textarea", {
+                      attrs: {
+                        type: "text",
+                        id: "challenge-details",
+                        placeholder: "Challenge description goes here"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", { staticClass: "radio-span" }, [
+                    _c("label", [_vm._v("Choose challenge difficulty")]),
+                    _vm._v(" "),
+                    _c("span", [
+                      _c("input", {
+                        attrs: {
+                          type: "radio",
+                          name: "challenge-diff",
+                          id: "challenge-diff-1"
+                        }
+                      }),
+                      _c("label", { attrs: { for: "challenge-diff-1" } }, [
+                        _vm._v("Easy")
+                      ]),
+                      _c("br")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", [
+                      _c("input", {
+                        attrs: {
+                          type: "radio",
+                          name: "challenge-diff",
+                          id: "challenge-diff-2"
+                        }
+                      }),
+                      _c("label", { attrs: { for: "challenge-diff-2" } }, [
+                        _vm._v("Intermediate")
+                      ]),
+                      _c("br")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", [
+                      _c("input", {
+                        attrs: {
+                          type: "radio",
+                          name: "challenge-diff",
+                          id: "challenge-diff-3"
+                        }
+                      }),
+                      _c("label", { attrs: { for: "challenge-diff-3" } }, [
+                        _vm._v("Difficult")
+                      ]),
+                      _c("br")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Challenge skills")]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", [
+                    _c("label", [_vm._v("Select all skills that apply")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "skill-con" }, [
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "testing" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "testing" } },
+                        [_vm._v("Testing")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          type: "checkbox",
+                          name: "",
+                          id: "responsive-design"
+                        }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "chip",
+                          attrs: { for: "responsive-design" }
+                        },
+                        [_vm._v("Responsive Design")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "api" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "api" } },
+                        [_vm._v("Api")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "front-end" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "front-end" } },
+                        [_vm._v("Front-end")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "back-end" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "back-end" } },
+                        [_vm._v("Back-end")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "full-stack" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "full-stack" } },
+                        [_vm._v("Full-stack")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          type: "checkbox",
+                          name: "",
+                          id: "design-system"
+                        }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "chip",
+                          attrs: { for: "design-system" }
+                        },
+                        [_vm._v("Design-system")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "analytical" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "analytical" } },
+                        [_vm._v("Analytical")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          type: "checkbox",
+                          name: "",
+                          id: "interpersonal"
+                        }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "chip",
+                          attrs: { for: "interpersonal" }
+                        },
+                        [_vm._v("Interpersonal")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "debugging" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "debugging" } },
+                        [_vm._v("Debugging")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "SEO" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "SEO" } },
+                        [_vm._v("SEO")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "ui/ux" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "ui/ux" } },
+                        [_vm._v("UI/UX")]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", [
+                    _c("label", [_vm._v("Select all technologies that apply")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tech-con" }, [
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "css" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "skill css", attrs: { for: "css" } },
+                        [
+                          _c("i", { staticClass: "fab fa-css3-alt" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("CSS3")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "html" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "skill html", attrs: { for: "html" } },
+                        [
+                          _c("i", { staticClass: "fab fa-html5" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("HTML")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "javascript" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill js",
+                          attrs: { for: "javascript" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-js" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("Javascript")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "node-js" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill node-js",
+                          attrs: { for: "node-js" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-node-js" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("Node JS")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "angular-js" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill angular-js",
+                          attrs: { for: "angular-js" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-angular" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("Angular JS")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "react-js" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill react-js",
+                          attrs: { for: "react-js" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-react" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("React JS")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "vue-js" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill vue-js",
+                          attrs: { for: "vue-js" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-vuejs" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("Vue JS")])
+                        ]
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("button", { attrs: { type: "submit" } }, [
+                _vm._v("Complete Creation")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Dashboard.vue?vue&type=template&id=040e2ab9&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Dashboard.vue?vue&type=template&id=040e2ab9& ***!
+  \************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "main" } }, [
+    _c("div", { class: { hide: _vm.hideSideNav }, attrs: { id: "side-nav" } }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "sub-nav" }, [
+        _c("div", { staticClass: "sub-nav-title" }, [_vm._v("Competitions")]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "accordion", attrs: { id: "accordionExample" } },
+          [
+            _c("div", { staticClass: "accordion-item" }, [
+              _c(
+                "h2",
+                {
+                  staticClass: "accordion-h header",
+                  attrs: { id: "headingOne" }
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "accordion-button",
+                      class: { collapsed: _vm.expandCompetitionLinks },
+                      attrs: {
+                        href: "#",
+                        "data-bs-toggle": "collapse",
+                        "data-bs-target": "#collapseOne",
+                        "aria-expanded": "false",
+                        "aria-controls": "collapseOne"
+                      },
+                      on: {
+                        click: function($event) {
+                          _vm.expandCompetitionLinks = !_vm.expandCompetitionLinks
+                        }
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "fas fa-user" }),
+                      _vm._v("Competitions\n            ")
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "accordion-collapse collapse",
+                  class: { show: _vm.expandCompetitionLinks },
+                  attrs: {
+                    id: "collapseOne",
+                    "aria-labelledby": "headingOne",
+                    "data-bs-parent": "#accordionExample"
+                  }
+                },
+                [_vm._m(1)]
+              )
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(2)
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "side-nav-overlay" }),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        class: { expand: _vm.hideSideNav },
+        attrs: { id: "dashboard-content" }
+      },
+      [
+        _c("header", { class: { expand: _vm.hideSideNav } }, [
+          _c(
+            "div",
+            {
+              attrs: { id: "side-nav-toggle-btn" },
+              on: { click: _vm.toggleNav }
+            },
+            [_c("i", { staticClass: "fas fa-bars" })]
+          ),
+          _vm._v(" "),
+          _vm._m(3)
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "breadcrumb-bar", class: { expand: _vm.hideSideNav } },
+          [_vm._m(4)]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container-fluid main-content" },
+          [_vm._t("default")],
+          2
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "logo-con" } }, [
+      _c("a", { attrs: { href: "#/", id: "logo" } }, [_vm._v(" LARATITION ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "accordion-body" }, [
+      _c("a", { attrs: { href: "#/competitions/new" } }, [
+        _c("i", { staticClass: "fas fa-user" }),
+        _vm._v("New Competiton")
+      ]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "#/competitions" } }, [
+        _c("i", { staticClass: "fas fa-user" }),
+        _vm._v("Competition List")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "#/submissions" } }, [
+      _c("i", { staticClass: "fas fa-user" }),
+      _vm._v("Submissions")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "header-sub" }, [
+      _c("nav", { attrs: { id: "header-navigator" } }, [
+        _c("a", { attrs: { href: "#/" } }, [_vm._v("Dashboard")]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Users")]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Settings")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "user-board" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("i", { staticClass: "fas fa-bell" })
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("i", { staticClass: "fas fa-list" })
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("i", { staticClass: "fas fa-envelope" })
+        ]),
+        _vm._v(" "),
+        _c("button", {
+          staticStyle: { background: "url(assets/images/chess-a.jpg)" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("nav", { attrs: { "aria-label": "breadcrumb" } }, [
+      _c("ol", { staticClass: "breadcrumb" }, [
+        _c("li", { staticClass: "breadcrumb-item" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "breadcrumb-item" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Admin")])
+        ]),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass: "breadcrumb-item active",
+            attrs: { "aria-current": "page" }
+          },
+          [_vm._v("\n            Dashboard\n          ")]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -38375,52 +39778,959 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid content" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("Admin Dashboard")]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "row" },
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "create-competition create-card",
-              attrs: { to: "/create-competition" }
-            },
-            [
-              _c("div", { staticClass: "create-card-sub" }, [
-                _c("h3", [_vm._v("Create Competition")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "Here you can create a competition for your students or for all users to see"
-                  )
-                ])
-              ])
-            ]
-          ),
+  return _c("dashboard-layout", [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "sub top" }, [
+          _c("h3", [_vm._v("Challenges")]),
           _vm._v(" "),
-          _c(
-            "router-link",
-            {
-              staticClass: "view-submissions create-card",
-              attrs: { to: "/view-competition" }
-            },
-            [
-              _c("div", { staticClass: "create-card-sub" }, [
-                _c("h3", [_vm._v("View Submissions")]),
+          _c("div", { staticClass: "top-value" }, [_vm._v("13")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "sub top" }, [
+          _c("h3", [_vm._v("Submissions")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "top-value" }, [_vm._v("13")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "sub top" }, [
+          _c("h3", [_vm._v("Students")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "top-value" }, [_vm._v("13")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "sub top" }, [
+          _c("h3", [_vm._v("Followers")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "top-value" }, [_vm._v("13")])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c(
+          "a",
+          {
+            staticClass: "sub challenge-sub",
+            staticStyle: { background: "url(assets/images/chess-a.jpg)" },
+            attrs: { href: "#/competitions/new" }
+          },
+          [
+            _c("div", { staticClass: "challenge-sub-sub create" }, [
+              _vm._v("Create Challenge")
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c(
+          "a",
+          {
+            staticClass: "sub challenge-sub",
+            staticStyle: { background: "url(assets/images/chess-b.jpg)" },
+            attrs: { href: "#/submissions" }
+          },
+          [
+            _c("div", { staticClass: "challenge-sub-sub submission" }, [
+              _vm._v("View Submissions")
+            ])
+          ]
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ReviewSubmission.vue?vue&type=template&id=fddb5da2&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ReviewSubmission.vue?vue&type=template&id=fddb5da2& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("dashboard-layout", [
+    _c("div", { staticClass: "container-fluid main-content" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("h1", [_vm._v("Review Submission")]),
+            _vm._v(" "),
+            _c("form", { staticClass: "rate-submission" }, [
+              _c("ol", [
+                _c("li", [
+                  _c("fieldset", [
+                    _c("label", [_vm._v("Submitter Summary")]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.\n                    Esse pariatur veritatis similique excepturi quisquam, unde\n                    doloremque earum distinctio blanditiis corporis commodi\n                    saepe repellendus molestiae soluta eos veniam maiores quia\n                    rem?\n                  "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("ul", [
+                      _c("li", [
+                        _vm._v(
+                          "\n                      Lorem ipsum, dolor sit amet consectetur adipisicing\n                      elit. Tenetur, quos.\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                      Lorem ipsum, dolor sit amet consectetur adipisicing\n                      elit. Tenetur, quos.\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                      Lorem ipsum, dolor sit amet consectetur adipisicing\n                      elit. Tenetur, quos.\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                      Lorem ipsum, dolor sit amet consectetur adipisicing\n                      elit. Tenetur, quos.\n                    "
+                        )
+                      ])
+                    ])
+                  ])
+                ]),
                 _vm._v(" "),
-                _c("p", [
-                  _vm._v("view yhe submitted solutions to your challenges")
+                _c("li", [
+                  _c("label", [_vm._v("Submitted on")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "submission-time" }, [
+                    _c("span", [_vm._v("00 / 00 / 00 , 00:00")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "early-or-late" }, [
+                      _c("div", { staticClass: "early" }, [_vm._v("On time")]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "late" }, [_vm._v("Late")])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", {}, [
+                    _c("label", [_vm._v("Files & Links")]),
+                    _vm._v(" "),
+                    _c("div", [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+                          _c(
+                            "a",
+                            { staticClass: "file-card", attrs: { href: "" } },
+                            [
+                              _c("div", { staticClass: "file-icon" }, [
+                                _c("i", { staticClass: "fas fa-file" })
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "file-info" }, [
+                                _c("span", { staticClass: "file-name" }, [
+                                  _vm._v("This is the file name")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "file-size" }, [
+                                  _vm._v("3.46 MB")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-md-6 col-sm-12 links" }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                href:
+                                  "http://127.0.0.1:5500/dashboard/rate-submission.html"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "http://127.0.0.1:5500/dashboard/rate-submission.html"
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                href:
+                                  "http://127.0.0.1:5500/dashboard/rate-submission.html"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "http://127.0.0.1:5500/dashboard/rate-submission.html"
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("label", [
+                    _vm._v("Give your final rating on the challenge")
+                  ]),
+                  _vm._v(" "),
+                  _c("form", { staticClass: "final-rating-form" }, [
+                    _c("fieldset", { attrs: { id: "final-rating" } }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+                          _c("input", {
+                            staticClass: "very-poor",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-1"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-1" } }, [
+                            _vm._v("1")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "very-poor",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-2"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-2" } }, [
+                            _vm._v("2")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "poor",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-3"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-3" } }, [
+                            _vm._v("3")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "poor",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-4"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-4" } }, [
+                            _vm._v("4")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "average",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-5"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-5" } }, [
+                            _vm._v("5")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "average",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-6"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-6" } }, [
+                            _vm._v("6")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "good",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-7"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-7" } }, [
+                            _vm._v("7")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "good",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-8"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-8" } }, [
+                            _vm._v("8")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "very-good",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-9"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-9" } }, [
+                            _vm._v("9")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "very-good",
+                            attrs: {
+                              type: "radio",
+                              name: "rating-1",
+                              id: "rating-10"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "rating-10" } }, [
+                            _vm._v("10")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "final-rating-result col-md-6 col-sm-12"
+                            },
+                            [
+                              _c("div", { staticClass: "very-poor-result" }, [
+                                _vm._v("Very Poor")
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "poor-result" }, [
+                                _vm._v("Poor")
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "average-result" }, [
+                                _vm._v("Average")
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "good-result" }, [
+                                _vm._v("Good")
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "very-good-result" }, [
+                                _vm._v("Very-good")
+                              ])
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("NOTES:")]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", [
+                    _c("label", { attrs: { for: "challenge-details" } }, [
+                      _vm._v("Enter your review on the challenge")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("textarea", {
+                      attrs: {
+                        type: "text",
+                        id: "challenge-details",
+                        placeholder: "Challenge review goes here"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", [
+                    _c("label", [_vm._v("Skills that need improvement")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "skill-con" }, [
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "testing" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "testing" } },
+                        [_vm._v("Testing")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          type: "checkbox",
+                          name: "",
+                          id: "responsive-design"
+                        }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "chip",
+                          attrs: { for: "responsive-design" }
+                        },
+                        [_vm._v("Responsive Design")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "api" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "api" } },
+                        [_vm._v("Api")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "front-end" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "front-end" } },
+                        [_vm._v("Front-end")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "back-end" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "back-end" } },
+                        [_vm._v("Back-end")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "full-stack" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "full-stack" } },
+                        [_vm._v("Full-stack")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          type: "checkbox",
+                          name: "",
+                          id: "design-system"
+                        }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "chip",
+                          attrs: { for: "design-system" }
+                        },
+                        [_vm._v("Design-system")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "analytical" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "analytical" } },
+                        [_vm._v("Analytical")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          type: "checkbox",
+                          name: "",
+                          id: "interpersonal"
+                        }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "chip",
+                          attrs: { for: "interpersonal" }
+                        },
+                        [_vm._v("Interpersonal")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "debugging" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "debugging" } },
+                        [_vm._v("Debugging")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "SEO" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "SEO" } },
+                        [_vm._v("SEO")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "ui/ux" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "chip", attrs: { for: "ui/ux" } },
+                        [_vm._v("UI/UX")]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("fieldset", [
+                    _c("label", [_vm._v("Technologies that need improvement")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tech-con" }, [
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "css" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "skill css", attrs: { for: "css" } },
+                        [
+                          _c("i", { staticClass: "fab fa-css3-alt" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("CSS3")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "html" }
+                      }),
+                      _c(
+                        "label",
+                        { staticClass: "skill html", attrs: { for: "html" } },
+                        [
+                          _c("i", { staticClass: "fab fa-html5" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("HTML")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "javascript" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill js",
+                          attrs: { for: "javascript" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-js" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("Javascript")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "node-js" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill node-js",
+                          attrs: { for: "node-js" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-node-js" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("Node JS")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "angular-js" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill angular-js",
+                          attrs: { for: "angular-js" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-angular" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("Angular JS")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "react-js" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill react-js",
+                          attrs: { for: "react-js" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-react" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("React JS")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { type: "checkbox", name: "", id: "vue-js" }
+                      }),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "skill vue-js",
+                          attrs: { for: "vue-js" }
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-vuejs" }),
+                          _vm._v(" "),
+                          _c("p", [_vm._v("Vue JS")])
+                        ]
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("button", { attrs: { type: "submit" } }, [_vm._v("Submit")])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "sub" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "sub" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "sub" })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _c("div", { staticClass: "sub" })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "sub" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "sub" })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "sub" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "sub" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "sub" })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _c("div", { staticClass: "sub" })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "sub" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "sub" })
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Submissions.vue?vue&type=template&id=638303e8&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Submissions.vue?vue&type=template&id=638303e8& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("dashboard-layout", [
+    _c("div", { staticClass: "container-fluid main-content" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _c("h1", [_vm._v("Submissions")]),
+          _vm._v(" "),
+          _c("table", { staticClass: "table table-striped" }, [
+            _c("thead", [
+              _c("tr", [
+                _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+                _vm._v(" "),
+                _c("th", { attrs: { scope: "col" } }, [_vm._v("Challenge")]),
+                _vm._v(" "),
+                _c("th", { attrs: { scope: "col" } }, [_vm._v("User")]),
+                _vm._v(" "),
+                _c("th", { attrs: { scope: "col" } }, [_vm._v("Score")]),
+                _vm._v(" "),
+                _c("th", { attrs: { scope: "col" } }, [_vm._v("Actions")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")]),
+                _vm._v(" "),
+                _c(
+                  "td",
+                  [
+                    _c(
+                      "router-link",
+                      { attrs: { to: "/competitions/review/1" } },
+                      [_c("button", [_vm._v("Review")])]
+                    )
+                  ],
+                  1
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ViewCompetitions.vue?vue&type=template&id=205f63c4&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ViewCompetitions.vue?vue&type=template&id=205f63c4& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("dashboard-layout", [
+    _c("div", { staticClass: "container-fluid main-content" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _c("h1", [_vm._v("Competitions")]),
+          _vm._v(" "),
+          _c("table", { staticClass: "table table-striped" }, [
+            _c("thead", [
+              _c("tr", [
+                _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+                _vm._v(" "),
+                _c("th", { attrs: { scope: "col" } }, [
+                  _vm._v("Challenge Name")
+                ]),
+                _vm._v(" "),
+                _c("th", { attrs: { scope: "col" } }, [_vm._v("Student Name")]),
+                _vm._v(" "),
+                _c("th", { attrs: { scope: "col" } }, [
+                  _vm._v("Number of submissions")
                 ])
               ])
-            ]
-          )
-        ],
-        1
-      )
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("This is challenge one")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Flovet Asong")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("32")])
+              ])
+            ])
+          ])
+        ])
+      ])
     ])
   ])
 }
@@ -53672,6 +55982,36 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-1!../../node_modules/postcss-loader/src??ref--6-2!./app.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/app.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -53691,15 +56031,20 @@ var routes = [{
   path: '/',
   component: __webpack_require__(/*! ./components/Home.vue */ "./resources/js/components/Home.vue")["default"]
 }, {
-  path: '/create-competition',
+  path: '/competitions/new',
   component: __webpack_require__(/*! ./components/CreateCompetition.vue */ "./resources/js/components/CreateCompetition.vue")["default"]
 }, {
-  path: '/view-competition',
+  path: '/competitions/review/:id',
+  component: __webpack_require__(/*! ./components/ReviewSubmission.vue */ "./resources/js/components/ReviewSubmission.vue")["default"]
+}, {
+  path: '/competitions',
   component: __webpack_require__(/*! ./components/ViewCompetitions.vue */ "./resources/js/components/ViewCompetitions.vue")["default"]
+}, {
+  path: '/submissions',
+  component: __webpack_require__(/*! ./components/Submissions.vue */ "./resources/js/components/Submissions.vue")["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
-  routes: routes // short for `routes: routes`
-
+  routes: routes
 });
 var app = new Vue({
   el: '#app',
@@ -53809,6 +56154,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Dashboard.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/components/Dashboard.vue ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Dashboard_vue_vue_type_template_id_040e2ab9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard.vue?vue&type=template&id=040e2ab9& */ "./resources/js/components/Dashboard.vue?vue&type=template&id=040e2ab9&");
+/* harmony import */ var _Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dashboard.vue?vue&type=script&lang=js& */ "./resources/js/components/Dashboard.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Dashboard_vue_vue_type_template_id_040e2ab9___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Dashboard_vue_vue_type_template_id_040e2ab9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Dashboard.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Dashboard.vue?vue&type=script&lang=js&":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/Dashboard.vue?vue&type=script&lang=js& ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Dashboard.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Dashboard.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Dashboard.vue?vue&type=template&id=040e2ab9&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/Dashboard.vue?vue&type=template&id=040e2ab9& ***!
+  \******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_040e2ab9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Dashboard.vue?vue&type=template&id=040e2ab9& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Dashboard.vue?vue&type=template&id=040e2ab9&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_040e2ab9___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_040e2ab9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue":
 /*!******************************************!*\
   !*** ./resources/js/components/Home.vue ***!
@@ -53878,6 +56292,144 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/ReviewSubmission.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/ReviewSubmission.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ReviewSubmission_vue_vue_type_template_id_fddb5da2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ReviewSubmission.vue?vue&type=template&id=fddb5da2& */ "./resources/js/components/ReviewSubmission.vue?vue&type=template&id=fddb5da2&");
+/* harmony import */ var _ReviewSubmission_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ReviewSubmission.vue?vue&type=script&lang=js& */ "./resources/js/components/ReviewSubmission.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ReviewSubmission_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ReviewSubmission_vue_vue_type_template_id_fddb5da2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ReviewSubmission_vue_vue_type_template_id_fddb5da2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ReviewSubmission.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ReviewSubmission.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/ReviewSubmission.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewSubmission_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ReviewSubmission.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ReviewSubmission.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewSubmission_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ReviewSubmission.vue?vue&type=template&id=fddb5da2&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/ReviewSubmission.vue?vue&type=template&id=fddb5da2& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewSubmission_vue_vue_type_template_id_fddb5da2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ReviewSubmission.vue?vue&type=template&id=fddb5da2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ReviewSubmission.vue?vue&type=template&id=fddb5da2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewSubmission_vue_vue_type_template_id_fddb5da2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewSubmission_vue_vue_type_template_id_fddb5da2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Submissions.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/Submissions.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Submissions_vue_vue_type_template_id_638303e8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Submissions.vue?vue&type=template&id=638303e8& */ "./resources/js/components/Submissions.vue?vue&type=template&id=638303e8&");
+/* harmony import */ var _Submissions_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Submissions.vue?vue&type=script&lang=js& */ "./resources/js/components/Submissions.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Submissions_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Submissions_vue_vue_type_template_id_638303e8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Submissions_vue_vue_type_template_id_638303e8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Submissions.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Submissions.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/Submissions.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Submissions_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Submissions.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Submissions.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Submissions_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Submissions.vue?vue&type=template&id=638303e8&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/Submissions.vue?vue&type=template&id=638303e8& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Submissions_vue_vue_type_template_id_638303e8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Submissions.vue?vue&type=template&id=638303e8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Submissions.vue?vue&type=template&id=638303e8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Submissions_vue_vue_type_template_id_638303e8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Submissions_vue_vue_type_template_id_638303e8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/ViewCompetitions.vue":
 /*!******************************************************!*\
   !*** ./resources/js/components/ViewCompetitions.vue ***!
@@ -53887,17 +56439,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-var render, staticRenderFns
-var script = {}
+/* harmony import */ var _ViewCompetitions_vue_vue_type_template_id_205f63c4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ViewCompetitions.vue?vue&type=template&id=205f63c4& */ "./resources/js/components/ViewCompetitions.vue?vue&type=template&id=205f63c4&");
+/* harmony import */ var _ViewCompetitions_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ViewCompetitions.vue?vue&type=script&lang=js& */ "./resources/js/components/ViewCompetitions.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
-  script,
-  render,
-  staticRenderFns,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ViewCompetitions_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ViewCompetitions_vue_vue_type_template_id_205f63c4___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ViewCompetitions_vue_vue_type_template_id_205f63c4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -53905,72 +56460,42 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   
 )
 
+/* hot reload */
+if (false) { var api; }
 component.options.__file = "resources/js/components/ViewCompetitions.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/data-service.js":
-/*!**************************************!*\
-  !*** ./resources/js/data-service.js ***!
-  \**************************************/
+/***/ "./resources/js/components/ViewCompetitions.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/ViewCompetitions.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _http_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./http-common */ "./resources/js/http-common.js");
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-
-
-var LaratitionDataService = /*#__PURE__*/function () {
-  function LaratitionDataService() {
-    _classCallCheck(this, LaratitionDataService);
-  }
-
-  _createClass(LaratitionDataService, [{
-    key: "createCompetition",
-    value: function createCompetition(form) {
-      return _http_common__WEBPACK_IMPORTED_MODULE_0__["default"].post('/competition/create');
-    }
-  }, {
-    key: "getCompetitions",
-    value: function getCompetitions() {
-      return _http_common__WEBPACK_IMPORTED_MODULE_0__["default"].get('/competitions');
-    }
-  }]);
-
-  return LaratitionDataService;
-}();
-
-/* harmony default export */ __webpack_exports__["default"] = (new LaratitionDataService());
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewCompetitions_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ViewCompetitions.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ViewCompetitions.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewCompetitions_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/http-common.js":
-/*!*************************************!*\
-  !*** ./resources/js/http-common.js ***!
-  \*************************************/
-/*! exports provided: default */
+/***/ "./resources/js/components/ViewCompetitions.vue?vue&type=template&id=205f63c4&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/ViewCompetitions.vue?vue&type=template&id=205f63c4& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewCompetitions_vue_vue_type_template_id_205f63c4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ViewCompetitions.vue?vue&type=template&id=205f63c4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ViewCompetitions.vue?vue&type=template&id=205f63c4&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewCompetitions_vue_vue_type_template_id_205f63c4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony default export */ __webpack_exports__["default"] = (axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
-  baseURL: '/api',
-  headers: {
-    "Accept": "application/json",
-    "Content-type": "application/json"
-  }
-}));
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewCompetitions_vue_vue_type_template_id_205f63c4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -53992,8 +56517,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vagrant/code/tournament/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/vagrant/code/tournament/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/fenn/projects/eya/tournament/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/fenn/projects/eya/tournament/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
