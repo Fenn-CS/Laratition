@@ -12,6 +12,7 @@ echo substr("Laravel", 0, 4).substr("competition", 5);
 - Competitions - Add and manage competitions [CRUD]
 - Submissions - Registered users can submit solutions to competitions
 - Leaderboard - Top users can be tracked on leaderboard
+- Votes - Submissions and competitions can be votted
 
 
 ### Dev Installation

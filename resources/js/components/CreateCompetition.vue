@@ -215,7 +215,7 @@
                 </li>
               </ol>
 
-              <button type="submit">Complete Creation</button>
+              <button @click="save" type="submit">Complete Creation</button>
             </form>
           </div>
         </div>
@@ -227,6 +227,7 @@
 
 <script>
 import DashboardLayout from "./Dashboard";
+import DataService from "../data-service";
 export default {
   name: "CreateCompetition",
   data: function () {
@@ -237,6 +238,27 @@ export default {
   },
   methods: {
     init: function () {},
+    save: function (e) {
+      e.preventDefault();
+      this.saveCompetition(false, false);
+    },
+    saveAndPublish: function () {
+       this.saveCompetition(true, true);
+    },
+    update: function () {
+       this.saveCompetition(false, true);
+    },
+    saveCompetition(published = false, update =  false) {
+        let formData = new FormData();
+        formData.append('title', 'Test Creation');
+        formData.append('description', 'Test Creation Description');
+        formData.append('user', '1');
+        formData.append('categories[]', []);
+        formData.append('tools[]', []);
+        DataService.createCompetition(formData).then((res) => {
+          console.log(res)
+        })
+    },
   },
   mounted() {},
 };

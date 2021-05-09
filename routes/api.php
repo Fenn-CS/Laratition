@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::middleware('auth:sanctum')->get('/competitions', [CompetitionController::class, 'competitions']);
 Route::middleware('auth:sanctum')->post('/competition/create', [CompetitionController::class, 'createCompetition']);
+Route::middleware('auth:sanctum')->post('/competitions/update', [CompetitionController::class, 'createCompetition']);

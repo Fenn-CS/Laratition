@@ -2,10 +2,11 @@
 
 namespace App\Models;
 
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Submission extends Model
+class Category extends Model
 {
     use HasFactory, Sluggable;
 
@@ -18,13 +19,14 @@ class Submission extends Model
     {
         return [
             'slug' => [
-                'source' => ['title', 'id']
+                'source' => ['name', 'id']
             ]
         ];
     }
 
-    public function tools()
+
+    public function competitions()
     {
-        return $this->morphToMany(Tool::class, 'toolables');
+        return $this->morphedByMany(Competition::class, 'competition_categories');
     }
 }

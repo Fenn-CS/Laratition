@@ -88,7 +88,9 @@ import DashboardLayout from "./Dashboard";
 export default {
   name: "ViewCompetitions",
   data: function () {
-    return {};
+    return {
+      competitions: []
+    };
   },
   components: {
     DashboardLayout,

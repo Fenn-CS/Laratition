@@ -1909,6 +1909,7 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Dashboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard */ "./resources/js/components/Dashboard.vue");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data-service */ "./resources/js/data-service.js");
 //
 //
 //
@@ -2137,6 +2138,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "CreateCompetition",
   data: function data() {
@@ -2146,7 +2148,30 @@ __webpack_require__.r(__webpack_exports__);
     DashboardLayout: _Dashboard__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   methods: {
-    init: function init() {}
+    init: function init() {},
+    save: function save(e) {
+      e.preventDefault();
+      this.saveCompetition(false, false);
+    },
+    saveAndPublish: function saveAndPublish() {
+      this.saveCompetition(true, true);
+    },
+    update: function update() {
+      this.saveCompetition(false, true);
+    },
+    saveCompetition: function saveCompetition() {
+      var published = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+      var update = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+      var formData = new FormData();
+      formData.append('title', 'Test Creation');
+      formData.append('description', 'Test Creation Description');
+      formData.append('user', '1');
+      formData.append('categories[]', []);
+      formData.append('tools[]', []);
+      _data_service__WEBPACK_IMPORTED_MODULE_1__["default"].createCompetition(formData).then(function (res) {
+        console.log(res);
+      });
+    }
   },
   mounted: function mounted() {}
 });
@@ -2907,7 +2932,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ViewCompetitions",
   data: function data() {
-    return {};
+    return {
+      competitions: []
+    };
   },
   components: {
     DashboardLayout: _Dashboard__WEBPACK_IMPORTED_MODULE_0__["default"]
@@ -39529,9 +39556,11 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _c("button", { attrs: { type: "submit" } }, [
-                _vm._v("Complete Creation")
-              ])
+              _c(
+                "button",
+                { attrs: { type: "submit" }, on: { click: _vm.save } },
+                [_vm._v("Complete Creation")]
+              )
             ])
           ])
         ])
@@ -56499,6 +56528,85 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/data-service.js":
+/*!**************************************!*\
+  !*** ./resources/js/data-service.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _http_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./http-common */ "./resources/js/http-common.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+var LaratitionDataService = /*#__PURE__*/function () {
+  function LaratitionDataService() {
+    _classCallCheck(this, LaratitionDataService);
+  }
+
+  _createClass(LaratitionDataService, [{
+    key: "createCompetition",
+    value: function createCompetition(form) {
+      return _http_common__WEBPACK_IMPORTED_MODULE_0__["default"].post('/competition/create', form)["catch"](this.errorHandler);
+      ;
+    }
+  }, {
+    key: "updateCompetition",
+    value: function updateCompetition(form) {
+      return _http_common__WEBPACK_IMPORTED_MODULE_0__["default"].post('/competitions/update/', form)["catch"](this.errorHandler);
+    }
+  }, {
+    key: "getCompetitions",
+    value: function getCompetitions() {
+      return _http_common__WEBPACK_IMPORTED_MODULE_0__["default"].get('/competitions')["catch"](this.errorHandler);
+    }
+  }, {
+    key: "errorHandler",
+    value: function errorHandler(error) {
+      if (error.response) {
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+      }
+    }
+  }]);
+
+  return LaratitionDataService;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (new LaratitionDataService());
+
+/***/ }),
+
+/***/ "./resources/js/http-common.js":
+/*!*************************************!*\
+  !*** ./resources/js/http-common.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ __webpack_exports__["default"] = (axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
+  baseURL: '/api',
+  headers: {
+    "Accept": "application/json",
+    "Content-type": "application/json"
+  }
+}));
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -56517,8 +56625,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/fenn/projects/eya/tournament/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/fenn/projects/eya/tournament/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/fenn/opensource/Laratition/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/fenn/opensource/Laratition/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
